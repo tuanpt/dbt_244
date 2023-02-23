@@ -665,3 +665,398 @@ drop table if exists bid.`thong_tin_goi_thau__dbt_backup`
 09:40:25.114236 [info ] [MainThread]: [32mCompleted successfully[0m
 09:40:25.114755 [info ] [MainThread]: 
 09:40:25.115209 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+
+
+============================== 2023-02-23 16:36:17.069408 | 50701357-0ca8-4624-9de3-84e3735708fe ==============================
+16:36:17.069433 [info ] [MainThread]: Running with dbt=1.1.3
+16:36:17.070328 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:36:17.070646 [debug] [MainThread]: Tracking: do not track
+16:36:17.208376 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+16:36:17.208744 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+16:36:17.209398 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.airbyte_utils.generated.airbyte_views
+- models.airbyte_utils.generated.airbyte_incremental
+
+16:36:17.236325 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 593 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+16:36:17.238422 [info ] [MainThread]: 
+16:36:17.239219 [debug] [MainThread]: Acquiring new mysql connection "master"
+16:36:17.240451 [debug] [ThreadPool]: Acquiring new mysql connection "list_schemas"
+16:36:17.272869 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+16:36:17.273328 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+16:36:17.273587 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:36:17.298361 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.02 seconds
+16:36:17.300397 [debug] [ThreadPool]: On list_schemas: Close
+16:36:17.302090 [debug] [ThreadPool]: Acquiring new mysql connection "list_None_bid"
+16:36:17.311733 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
+16:36:17.312002 [debug] [ThreadPool]: On list_None_bid: BEGIN
+16:36:17.312300 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+16:36:17.317696 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.01 seconds
+16:36:17.317958 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
+16:36:17.318198 [debug] [ThreadPool]: On list_None_bid: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_None_bid"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'bid'
+  
+16:36:17.319872 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.0 seconds
+16:36:17.321478 [debug] [ThreadPool]: On list_None_bid: ROLLBACK
+16:36:17.321942 [debug] [ThreadPool]: On list_None_bid: Close
+16:36:17.322907 [debug] [MainThread]: Using mysql connection "master"
+16:36:17.323218 [debug] [MainThread]: On master: BEGIN
+16:36:17.323470 [debug] [MainThread]: Opening a new connection, currently in state init
+16:36:17.329439 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
+16:36:17.329850 [debug] [MainThread]: On master: COMMIT
+16:36:17.330180 [debug] [MainThread]: Using mysql connection "master"
+16:36:17.330425 [debug] [MainThread]: On master: COMMIT
+16:36:17.331115 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+16:36:17.331421 [debug] [MainThread]: On master: Close
+16:36:17.332713 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
+16:36:17.333500 [info ] [MainThread]: 
+16:36:17.338642 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab1
+16:36:17.339840 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab1"
+16:36:17.340350 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab1
+16:36:17.340840 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab1
+16:36:17.434486 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab1"
+16:36:17.435314 [debug] [Thread-1  ]: finished collecting timing info
+16:36:17.436228 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab1
+16:36:17.437356 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab2
+16:36:17.437925 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab2"
+16:36:17.438258 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab2
+16:36:17.438512 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab2
+16:36:17.583051 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab2"
+16:36:17.584210 [debug] [Thread-1  ]: finished collecting timing info
+16:36:17.585069 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab2
+16:36:17.586047 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab3
+16:36:17.586542 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab3"
+16:36:17.586807 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab3
+16:36:17.588380 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab3
+16:36:17.715385 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab3"
+16:36:17.715964 [debug] [Thread-1  ]: finished collecting timing info
+16:36:17.716697 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab3
+16:36:17.717820 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau
+16:36:17.718211 [info ] [Thread-1  ]: 1 of 1 START table model bid.thong_tin_goi_thau ........................................................................ [RUN]
+16:36:17.719017 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.719314 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau
+16:36:17.719594 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau
+16:36:17.748979 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.749706 [debug] [Thread-1  ]: finished collecting timing info
+16:36:17.749989 [debug] [Thread-1  ]: Began executing node model.airbyte_utils.thong_tin_goi_thau
+16:36:17.799052 [debug] [Thread-1  ]: Writing runtime SQL for node "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.799870 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.800162 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: BEGIN
+16:36:17.800451 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+16:36:17.806763 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
+16:36:17.807038 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.807285 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+
+
+  create  table
+    bid.`thong_tin_goi_thau__dbt_tmp`
+  as (
+    
+with __dbt__cte__thong_tin_goi_thau_ab1 as (
+
+-- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
+-- depends_on: bid._airbyte_raw_thong_tin_goi_thau
+select
+    json_value(_airbyte_data, 
+    '$."id"' RETURNING CHAR) as id,
+    json_value(_airbyte_data, 
+    '$."link"' RETURNING CHAR) as link,
+    json_value(_airbyte_data, 
+    '$."deleted"' RETURNING CHAR) as deleted,
+    json_value(_airbyte_data, 
+    '$."loai_tb"' RETURNING CHAR) as loai_tb,
+    json_value(_airbyte_data, 
+    '$."so_tbmt"' RETURNING CHAR) as so_tbmt,
+    json_value(_airbyte_data, 
+    '$."linh_vuc"' RETURNING CHAR) as linh_vuc,
+    json_value(_airbyte_data, 
+    '$."services"' RETURNING CHAR) as services,
+    json_value(_airbyte_data, 
+    '$."nguon_von"' RETURNING CHAR) as nguon_von,
+    json_value(_airbyte_data, 
+    '$."phan_loai"' RETURNING CHAR) as phan_loai,
+    json_value(_airbyte_data, 
+    '$."tien_dbdt"' RETURNING CHAR) as tien_dbdt,
+    json_value(_airbyte_data, 
+    '$."timestamp"' RETURNING CHAR) as `timestamp`,
+    json_value(_airbyte_data, 
+    '$."company_id"' RETURNING CHAR) as company_id,
+    json_value(_airbyte_data, 
+    '$."ten_khlcnt"' RETURNING CHAR) as ten_khlcnt,
+    json_value(_airbyte_data, 
+    '$."trang_thai"' RETURNING CHAR) as trang_thai,
+    json_value(_airbyte_data, 
+    '$."gia_du_toan"' RETURNING CHAR) as gia_du_toan,
+    json_value(_airbyte_data, 
+    '$."ten_du_toan"' RETURNING CHAR) as ten_du_toan,
+    json_value(_airbyte_data, 
+    '$."ben_moi_thau"' RETURNING CHAR) as ben_moi_thau,
+    json_value(_airbyte_data, 
+    '$."gia_goi_thau"' RETURNING CHAR) as gia_goi_thau,
+    json_value(_airbyte_data, 
+    '$."hinh_thuc_tb"' RETURNING CHAR) as hinh_thuc_tb,
+    json_value(_airbyte_data, 
+    '$."send_mail_id"' RETURNING CHAR) as send_mail_id,
+    json_value(_airbyte_data, 
+    '$."ten_goi_thau"' RETURNING CHAR) as ten_goi_thau,
+    json_value(_airbyte_data, 
+    '$."competitor_id"' RETURNING CHAR) as competitor_id,
+    json_value(_airbyte_data, 
+    '$."loai_hop_dong"' RETURNING CHAR) as loai_hop_dong,
+    json_value(_airbyte_data, 
+    '$."score_by_name"' RETURNING CHAR) as score_by_name,
+    json_value(_airbyte_data, 
+    '$."score_service"' RETURNING CHAR) as score_service,
+    json_value(_airbyte_data, 
+    '$."gia_trung_thau"' RETURNING CHAR) as gia_trung_thau,
+    json_value(_airbyte_data, 
+    '$."hinh_thuc_dbdt"' RETURNING CHAR) as hinh_thuc_dbdt,
+    json_value(_airbyte_data, 
+    '$."hinh_thuc_lcnt"' RETURNING CHAR) as hinh_thuc_lcnt,
+    json_value(_airbyte_data, 
+    '$."ngay_phe_duyet"' RETURNING CHAR) as ngay_phe_duyet,
+    json_value(_airbyte_data, 
+    '$."score_by_scope"' RETURNING CHAR) as score_by_scope,
+    json_value(_airbyte_data, 
+    '$."so_hieu_khlcnt"' RETURNING CHAR) as so_hieu_khlcnt,
+    json_value(_airbyte_data, 
+    '$."hieu_luc_e_hsdt"' RETURNING CHAR) as hieu_luc_e_hsdt,
+    json_value(_airbyte_data, 
+    '$."so_tbmt_version"' RETURNING CHAR) as so_tbmt_version,
+    json_value(_airbyte_data, 
+    '$."dia_diem_mo_thau"' RETURNING CHAR) as dia_diem_mo_thau,
+    json_value(_airbyte_data, 
+    '$."phuong_thuc_lcnt"' RETURNING CHAR) as phuong_thuc_lcnt,
+    json_value(_airbyte_data, 
+    '$."services_by_name"' RETURNING CHAR) as services_by_name,
+    json_value(_airbyte_data, 
+    '$."don_vi_trung_thau"' RETURNING CHAR) as don_vi_trung_thau,
+    json_value(_airbyte_data, 
+    '$."hinh_thuc_du_thau"' RETURNING CHAR) as hinh_thuc_du_thau,
+    json_value(_airbyte_data, 
+    '$."services_by_scope"' RETURNING CHAR) as services_by_scope,
+    json_value(_airbyte_data, 
+    '$."dia_diem_nhan_hsdt"' RETURNING CHAR) as dia_diem_nhan_hsdt,
+    json_value(_airbyte_data, 
+    '$."dia_diem_thuc_hien"' RETURNING CHAR) as dia_diem_thuc_hien,
+    json_value(_airbyte_data, 
+    '$."nhan_e_hsdt_tu_ngay"' RETURNING CHAR) as nhan_e_hsdt_tu_ngay,
+    json_value(_airbyte_data, 
+    '$."thoi_gian_thuc_hien"' RETURNING CHAR) as thoi_gian_thuc_hien,
+    json_value(_airbyte_data, 
+    '$."nhan_e_hsdt_den_ngay"' RETURNING CHAR) as nhan_e_hsdt_den_ngay,
+    json_value(_airbyte_data, 
+    '$."thoi_diem_dong_mo_thau"' RETURNING CHAR) as thoi_diem_dong_mo_thau,
+    _airbyte_ab_id,
+    _airbyte_emitted_at,
+    
+    CURRENT_TIMESTAMP
+ as _airbyte_normalized_at
+from bid._airbyte_raw_thong_tin_goi_thau as table_alias
+-- thong_tin_goi_thau
+where 1 = 1
+),  __dbt__cte__thong_tin_goi_thau_ab2 as (
+
+-- SQL model to cast each column to its adequate SQL type converted from the JSON schema type
+-- depends_on: __dbt__cte__thong_tin_goi_thau_ab1
+select
+    cast(id as 
+    signed
+) as id,
+    cast(link as char(1024)) as link,
+    cast(deleted as 
+    signed
+) as deleted,
+    cast(loai_tb as char(1024)) as loai_tb,
+    cast(so_tbmt as char(1024)) as so_tbmt,
+    cast(linh_vuc as char(1024)) as linh_vuc,
+    cast(services as char(6144)) as services,
+    cast(nguon_von as char(1024)) as nguon_von,
+    cast(phan_loai as char(1024)) as phan_loai,
+    cast(tien_dbdt as char(1024)) as tien_dbdt,
+    cast(`timestamp` as char(1024)) as `timestamp`,
+    cast(company_id as char(1024)) as company_id,
+    cast(ten_khlcnt as char(1024)) as ten_khlcnt,
+    cast(trang_thai as 
+    signed
+) as trang_thai,
+    cast(gia_du_toan as char(1024)) as gia_du_toan,
+    cast(ten_du_toan as char(1024)) as ten_du_toan,
+    cast(ben_moi_thau as char(1024)) as ben_moi_thau,
+    cast(gia_goi_thau as char(1024)) as gia_goi_thau,
+    cast(hinh_thuc_tb as char(1024)) as hinh_thuc_tb,
+    cast(send_mail_id as char(1024)) as send_mail_id,
+    cast(ten_goi_thau as char(1024)) as ten_goi_thau,
+    cast(competitor_id as char(1024)) as competitor_id,
+    cast(loai_hop_dong as char(1024)) as loai_hop_dong,
+    cast(score_by_name as 
+    float
+) as score_by_name,
+    cast(score_service as 
+    float
+) as score_service,
+    cast(gia_trung_thau as char(1024)) as gia_trung_thau,
+    cast(hinh_thuc_dbdt as char(1024)) as hinh_thuc_dbdt,
+    cast(hinh_thuc_lcnt as char(1024)) as hinh_thuc_lcnt,
+    cast(ngay_phe_duyet as char(1024)) as ngay_phe_duyet,
+    cast(score_by_scope as 
+    float
+) as score_by_scope,
+    cast(so_hieu_khlcnt as char(1024)) as so_hieu_khlcnt,
+    cast(hieu_luc_e_hsdt as char(1024)) as hieu_luc_e_hsdt,
+    cast(so_tbmt_version as char(1024)) as so_tbmt_version,
+    cast(dia_diem_mo_thau as char(1024)) as dia_diem_mo_thau,
+    cast(phuong_thuc_lcnt as char(1024)) as phuong_thuc_lcnt,
+    cast(services_by_name as char(6144)) as services_by_name,
+    cast(don_vi_trung_thau as char(1024)) as don_vi_trung_thau,
+    cast(hinh_thuc_du_thau as char(1024)) as hinh_thuc_du_thau,
+    cast(services_by_scope as char(6144)) as services_by_scope,
+    cast(dia_diem_nhan_hsdt as char(1024)) as dia_diem_nhan_hsdt,
+    cast(dia_diem_thuc_hien as char(1024)) as dia_diem_thuc_hien,
+    cast(nhan_e_hsdt_tu_ngay as char(1024)) as nhan_e_hsdt_tu_ngay,
+    cast(thoi_gian_thuc_hien as char(1024)) as thoi_gian_thuc_hien,
+    cast(nhan_e_hsdt_den_ngay as char(1024)) as nhan_e_hsdt_den_ngay,
+    cast(thoi_diem_dong_mo_thau as char(1024)) as thoi_diem_dong_mo_thau,
+    _airbyte_ab_id,
+    _airbyte_emitted_at,
+    
+    CURRENT_TIMESTAMP
+ as _airbyte_normalized_at
+from __dbt__cte__thong_tin_goi_thau_ab1
+-- thong_tin_goi_thau
+where 1 = 1
+),  __dbt__cte__thong_tin_goi_thau_ab3 as (
+
+-- SQL model to build a hash column based on the values of this record
+-- depends_on: __dbt__cte__thong_tin_goi_thau_ab2
+select
+    md5(cast(concat(coalesce(cast(id as char), ''), '-', coalesce(cast(link as char), ''), '-', coalesce(cast(deleted as char), ''), '-', coalesce(cast(loai_tb as char), ''), '-', coalesce(cast(so_tbmt as char), ''), '-', coalesce(cast(linh_vuc as char), ''), '-', coalesce(cast(services as char), ''), '-', coalesce(cast(nguon_von as char), ''), '-', coalesce(cast(phan_loai as char), ''), '-', coalesce(cast(tien_dbdt as char), ''), '-', coalesce(cast(`timestamp` as char), ''), '-', coalesce(cast(company_id as char), ''), '-', coalesce(cast(ten_khlcnt as char), ''), '-', coalesce(cast(trang_thai as char), ''), '-', coalesce(cast(gia_du_toan as char), ''), '-', coalesce(cast(ten_du_toan as char), ''), '-', coalesce(cast(ben_moi_thau as char), ''), '-', coalesce(cast(gia_goi_thau as char), ''), '-', coalesce(cast(hinh_thuc_tb as char), ''), '-', coalesce(cast(send_mail_id as char), ''), '-', coalesce(cast(ten_goi_thau as char), ''), '-', coalesce(cast(competitor_id as char), ''), '-', coalesce(cast(loai_hop_dong as char), ''), '-', coalesce(cast(score_by_name as char), ''), '-', coalesce(cast(score_service as char), ''), '-', coalesce(cast(gia_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_dbdt as char), ''), '-', coalesce(cast(hinh_thuc_lcnt as char), ''), '-', coalesce(cast(ngay_phe_duyet as char), ''), '-', coalesce(cast(score_by_scope as char), ''), '-', coalesce(cast(so_hieu_khlcnt as char), ''), '-', coalesce(cast(hieu_luc_e_hsdt as char), ''), '-', coalesce(cast(so_tbmt_version as char), ''), '-', coalesce(cast(dia_diem_mo_thau as char), ''), '-', coalesce(cast(phuong_thuc_lcnt as char), ''), '-', coalesce(cast(services_by_name as char), ''), '-', coalesce(cast(don_vi_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_du_thau as char), ''), '-', coalesce(cast(services_by_scope as char), ''), '-', coalesce(cast(dia_diem_nhan_hsdt as char), ''), '-', coalesce(cast(dia_diem_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_tu_ngay as char), ''), '-', coalesce(cast(thoi_gian_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_den_ngay as char), ''), '-', coalesce(cast(thoi_diem_dong_mo_thau as char), '')) as char)) as _airbyte_thong_tin_goi_thau_hashid,
+    tmp.*
+from __dbt__cte__thong_tin_goi_thau_ab2 tmp
+-- thong_tin_goi_thau
+where 1 = 1
+)-- Final base SQL model
+-- depends_on: __dbt__cte__thong_tin_goi_thau_ab3
+select
+    id,
+    link,
+    deleted,
+    loai_tb,
+    so_tbmt,
+    linh_vuc,
+    services,
+    nguon_von,
+    phan_loai,
+    tien_dbdt,
+    `timestamp`,
+    company_id,
+    ten_khlcnt,
+    trang_thai,
+    gia_du_toan,
+    ten_du_toan,
+    ben_moi_thau,
+    gia_goi_thau,
+    hinh_thuc_tb,
+    send_mail_id,
+    ten_goi_thau,
+    competitor_id,
+    loai_hop_dong,
+    score_by_name,
+    score_service,
+    gia_trung_thau,
+    hinh_thuc_dbdt,
+    hinh_thuc_lcnt,
+    ngay_phe_duyet,
+    score_by_scope,
+    so_hieu_khlcnt,
+    hieu_luc_e_hsdt,
+    so_tbmt_version,
+    dia_diem_mo_thau,
+    phuong_thuc_lcnt,
+    services_by_name,
+    don_vi_trung_thau,
+    hinh_thuc_du_thau,
+    services_by_scope,
+    dia_diem_nhan_hsdt,
+    dia_diem_thuc_hien,
+    nhan_e_hsdt_tu_ngay,
+    thoi_gian_thuc_hien,
+    nhan_e_hsdt_den_ngay,
+    thoi_diem_dong_mo_thau,
+    _airbyte_ab_id,
+    _airbyte_emitted_at,
+    
+    CURRENT_TIMESTAMP
+ as _airbyte_normalized_at,
+    _airbyte_thong_tin_goi_thau_hashid
+from __dbt__cte__thong_tin_goi_thau_ab3
+-- thong_tin_goi_thau from bid._airbyte_raw_thong_tin_goi_thau
+where 1 = 1
+  )
+
+16:36:17.860496 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.05 seconds
+16:36:17.872104 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.872413 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+
+    drop table if exists bid.`thong_tin_goi_thau__dbt_backup` cascade
+  
+16:36:17.875777 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
+16:36:17.877072 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.877330 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+
+    rename table `bid`.`thong_tin_goi_thau` to bid.`thong_tin_goi_thau__dbt_backup`
+  
+16:36:17.898381 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.02 seconds
+16:36:17.902558 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.902812 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+
+    drop table if exists bid.`thong_tin_goi_thau` cascade
+  
+16:36:17.905741 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
+16:36:17.907327 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.907816 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+
+    rename table bid.`thong_tin_goi_thau__dbt_tmp` to bid.`thong_tin_goi_thau`
+  
+16:36:17.935316 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.03 seconds
+16:36:17.957826 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: COMMIT
+16:36:17.958107 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.958359 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: COMMIT
+16:36:17.959061 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
+16:36:17.967144 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+16:36:17.967418 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+drop table if exists bid.`thong_tin_goi_thau__dbt_backup`
+16:36:17.990175 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.02 seconds
+16:36:17.991797 [debug] [Thread-1  ]: finished collecting timing info
+16:36:17.992108 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: Close
+16:36:17.993041 [info ] [Thread-1  ]: 1 of 1 OK created table model bid.thong_tin_goi_thau ................................................................... [[32mSUCCESS 0[0m in 0.27s]
+16:36:17.993813 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau
+16:36:17.995519 [debug] [MainThread]: Acquiring new mysql connection "master"
+16:36:17.995841 [debug] [MainThread]: Using mysql connection "master"
+16:36:17.996232 [debug] [MainThread]: On master: BEGIN
+16:36:17.996577 [debug] [MainThread]: Opening a new connection, currently in state closed
+16:36:18.002662 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
+16:36:18.003135 [debug] [MainThread]: On master: COMMIT
+16:36:18.003493 [debug] [MainThread]: Using mysql connection "master"
+16:36:18.003730 [debug] [MainThread]: On master: COMMIT
+16:36:18.004485 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+16:36:18.004750 [debug] [MainThread]: On master: Close
+16:36:18.005527 [info ] [MainThread]: 
+16:36:18.006172 [info ] [MainThread]: Finished running 1 table model in 0.77s.
+16:36:18.006627 [debug] [MainThread]: Connection 'master' was properly closed.
+16:36:18.006868 [debug] [MainThread]: Connection 'model.airbyte_utils.thong_tin_goi_thau' was properly closed.
+16:36:18.028289 [info ] [MainThread]: 
+16:36:18.028845 [info ] [MainThread]: [32mCompleted successfully[0m
+16:36:18.030147 [info ] [MainThread]: 
+16:36:18.030733 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
