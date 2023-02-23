@@ -1,0 +1,16 @@
+config:
+  partial_parse: true
+  printer_width: 120
+  send_anonymous_usage_stats: false
+  use_colors: true
+normalize:
+  outputs:
+    prod:
+      database: bid
+      password: Airbyte@123
+      port: 3306
+      schema: bid
+      server: 10.158.8.166
+      type: mysql
+      username: airbyte
+  target: prod
