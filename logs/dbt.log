@@ -1,284 +1,306 @@
 
 
-============================== 2023-02-23 08:08:35.717289 | a3f335aa-91c6-404b-b492-225c8011dab8 ==============================
-08:08:35.717303 [info ] [MainThread]: Running with dbt=1.1.3
-08:08:35.717888 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
-08:08:35.718168 [debug] [MainThread]: Tracking: do not track
+============================== 2023-02-23 07:49:18.939072 | 6643cfaa-657f-4bef-a97d-169f65b87617 ==============================
+07:49:18.939072 [info ] [MainThread]: Running with dbt=1.0.0
+07:49:18.939581 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/data/1/0/normalize', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir='/data/1/0/normalize', profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+07:49:18.939864 [debug] [MainThread]: Tracking: do not track
+07:49:19.073197 [debug] [MainThread]: Executing "git --help"
+07:49:19.079714 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+07:49:19.080265 [debug] [MainThread]: STDERR: "b''"
+07:49:19.086101 [debug] [MainThread]: Acquiring new mysql connection "debug"
+07:49:19.086800 [debug] [MainThread]: Using mysql connection "debug"
+07:49:19.087036 [debug] [MainThread]: On debug: select 1 as id
+07:49:19.087268 [debug] [MainThread]: Opening a new connection, currently in state init
+07:49:19.097730 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
+07:49:19.099475 [debug] [MainThread]: On debug: Close
+07:49:19.102125 [debug] [MainThread]: Connection 'debug' was properly closed.
 
 
-============================== 2023-02-23 08:09:51.266034 | e3730318-d636-4720-b6bc-705f28dcc10a ==============================
-08:09:51.266049 [info ] [MainThread]: Running with dbt=1.1.3
-08:09:51.266646 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
-08:09:51.266898 [debug] [MainThread]: Tracking: do not track
+============================== 2023-02-23 07:53:24.335226 | ecf8a147-aea9-46c1-bef9-846b0987d62c ==============================
+07:53:24.335226 [info ] [MainThread]: Running with dbt=1.0.0
+07:53:24.339534 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/data/1/0/normalize', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir='/data/1/0/normalize', profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+07:53:24.339978 [debug] [MainThread]: Tracking: do not track
+07:53:24.368895 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.mysql'
+07:53:24.414944 [debug] [MainThread]: Executing "git --help"
+07:53:24.419850 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+07:53:24.420352 [debug] [MainThread]: STDERR: "b''"
 
 
-============================== 2023-02-23 08:12:55.288198 | 47d02a23-b984-4922-9e32-78f6691e8d29 ==============================
-08:12:55.288213 [info ] [MainThread]: Running with dbt=1.1.3
-08:12:55.288776 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
-08:12:55.289020 [debug] [MainThread]: Tracking: do not track
+============================== 2023-02-23 08:02:26.681272 | 61eccbfe-ea73-4180-9670-3c5385bfd848 ==============================
+08:02:26.681272 [info ] [MainThread]: Running with dbt=1.0.0
+08:02:26.687358 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/data/1/0/normalize', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir='/data/1/0/normalize', profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+08:02:26.687762 [debug] [MainThread]: Tracking: do not track
+08:02:26.731661 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.mysql'
+08:02:26.777475 [debug] [MainThread]: Executing "git --help"
+08:02:26.782351 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+08:02:26.782807 [debug] [MainThread]: STDERR: "b''"
 
 
-============================== 2023-02-23 08:13:18.157159 | 0877a1d9-f2a7-49e0-836e-9a31eb66bc28 ==============================
-08:13:18.157178 [info ] [MainThread]: Running with dbt=1.1.3
-08:13:18.157852 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
-08:13:18.158112 [debug] [MainThread]: Tracking: do not track
+============================== 2023-02-23 08:03:48.369277 | 0c3990cd-3a8d-422f-b373-c71c2555abbf ==============================
+08:03:48.369277 [info ] [MainThread]: Running with dbt=1.0.0
+08:03:48.369778 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/data/1/0/normalize', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir='/data/1/0/normalize', profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+08:03:48.370027 [debug] [MainThread]: Tracking: do not track
+08:03:48.385922 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.mysql'
+08:03:48.431116 [debug] [MainThread]: Executing "git --help"
+08:03:48.435796 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+08:03:48.436384 [debug] [MainThread]: STDERR: "b''"
 
 
-============================== 2023-02-23 08:16:59.045680 | 83fe95d8-21ec-49fd-8cf7-11a5bb05b7aa ==============================
-08:16:59.045693 [info ] [MainThread]: Running with dbt=1.1.3
-08:16:59.046377 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
-08:16:59.046643 [debug] [MainThread]: Tracking: do not track
-08:16:59.051594 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-gzy9xp3o'
-08:16:59.052607 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
-08:17:01.138764 [debug] [MainThread]: STDOUT: "b''"
-08:17:01.139426 [debug] [MainThread]: STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
-08:17:01.140204 [debug] [MainThread]: Pulling new dependency 859fd0fa21176efee375a447937f7a46.
-08:17:01.140524 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:17:01.146865 [debug] [MainThread]: STDOUT: "b'dcc9f47e805dbe83e862628591d2451c29cee7b5\n'"
-08:17:01.147437 [debug] [MainThread]: STDERR: "b''"
-08:17:01.147779 [debug] [MainThread]:   Checking out revision 0.8.2.
-08:17:01.148134 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
-08:17:01.152861 [debug] [MainThread]: STDOUT: "b''"
-08:17:01.153432 [debug] [MainThread]: STDERR: "b''"
-08:17:01.153735 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
-08:17:02.754164 [debug] [MainThread]: STDOUT: "b''"
-08:17:02.754798 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n * [new tag]         0.0.1      -> 0.0.1\n * [new tag]         0.1.0      -> 0.1.0\n * [new tag]         0.1.1      -> 0.1.1\n * [new tag]         0.1.10     -> 0.1.10\n * [new tag]         0.1.11     -> 0.1.11\n * [new tag]         0.1.12     -> 0.1.12\n * [new tag]         0.1.13     -> 0.1.13\n * [new tag]         0.1.14     -> 0.1.14\n * [new tag]         0.1.15     -> 0.1.15\n * [new tag]         0.1.16     -> 0.1.16\n * [new tag]         0.1.17     -> 0.1.17\n * [new tag]         0.1.18     -> 0.1.18\n * [new tag]         0.1.19     -> 0.1.19\n * [new tag]         0.1.2      -> 0.1.2\n * [new tag]         0.1.20     -> 0.1.20\n * [new tag]         0.1.21     -> 0.1.21\n * [new tag]         0.1.22     -> 0.1.22\n * [new tag]         0.1.23     -> 0.1.23\n * [new tag]         0.1.24     -> 0.1.24\n * [new tag]         0.1.25     -> 0.1.25\n * [new tag]         0.1.3      -> 0.1.3\n * [new tag]         0.1.4      -> 0.1.4\n * [new tag]         0.1.5      -> 0.1.5\n * [new tag]         0.1.6      -> 0.1.6\n * [new tag]         0.1.7      -> 0.1.7\n * [new tag]         0.1.8      -> 0.1.8\n * [new tag]         0.1.9      -> 0.1.9\n * [new tag]         0.2.0      -> 0.2.0\n * [new tag]         0.2.1      -> 0.2.1\n * [new tag]         0.2.2      -> 0.2.2\n * [new tag]         0.2.3      -> 0.2.3\n * [new tag]         0.2.4      -> 0.2.4\n * [new tag]         0.2.5      -> 0.2.5\n * [new tag]         0.3.0      -> 0.3.0\n * [new tag]         0.4.0      -> 0.4.0\n * [new tag]         0.4.1      -> 0.4.1\n * [new tag]         0.5.0      -> 0.5.0\n * [new tag]         0.5.1      -> 0.5.1\n * [new tag]         0.6.0      -> 0.6.0\n * [new tag]         0.6.1      -> 0.6.1\n * [new tag]         0.6.2      -> 0.6.2\n * [new tag]         0.6.3      -> 0.6.3\n * [new tag]         0.6.4      -> 0.6.4\n * [new tag]         0.6.5      -> 0.6.5\n * [new tag]         0.6.6      -> 0.6.6\n * [new tag]         0.7.0      -> 0.7.0\n * [new tag]         0.7.1      -> 0.7.1\n * [new tag]         0.7.2      -> 0.7.2\n * [new tag]         0.7.3      -> 0.7.3\n * [new tag]         0.7.4      -> 0.7.4\n * [new tag]         0.7.4-b1   -> 0.7.4-b1\n * [new tag]         0.7.4b1    -> 0.7.4b1\n * [new tag]         0.7.5      -> 0.7.5\n * [new tag]         0.7.6      -> 0.7.6\n * [new tag]         0.8.0      -> 0.8.0\n * [new tag]         0.8.1      -> 0.8.1\n * [new tag]         0.8.2      -> 0.8.2\n * [new tag]         0.8.3      -> 0.8.3\n * [new tag]         0.8.4      -> 0.8.4\n * [new tag]         0.8.5      -> 0.8.5\n * [new tag]         0.8.6      -> 0.8.6\n * [new tag]         0.9.0      -> 0.9.0\n * [new tag]         0.9.1      -> 0.9.1\n * [new tag]         0.9.2      -> 0.9.2\n * [new tag]         0.9.5      -> 0.9.5\n * [new tag]         0.9.6      -> 0.9.6\n * [new tag]         1.0.0      -> 1.0.0\n * [new tag]         1.0.0-b1   -> 1.0.0-b1\n * [new tag]         1.0.0-b2   -> 1.0.0-b2\n * [new tag]         1.0.0-rc1  -> 1.0.0-rc1\n'"
-08:17:02.755177 [debug] [MainThread]: Executing "git tag --list"
-08:17:02.760611 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
-08:17:02.761119 [debug] [MainThread]: STDERR: "b''"
-08:17:02.761408 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
-08:17:02.781378 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
-08:17:02.781870 [debug] [MainThread]: STDERR: "b''"
-08:17:02.782151 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:17:02.785884 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:17:02.786403 [debug] [MainThread]: STDERR: "b''"
-08:17:02.786695 [debug] [MainThread]:   Checked out at 5717b10.
-08:17:02.797412 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
-08:17:02.800847 [debug] [MainThread]: STDOUT: "b''"
-08:17:02.801319 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
-08:17:02.801566 [debug] [MainThread]: command return code=128
-08:17:02.803305 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
-08:17:02.803564 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:17:02.807374 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:17:02.807854 [debug] [MainThread]: STDERR: "b''"
-08:17:02.808271 [debug] [MainThread]:   Checking out revision 0.8.2.
-08:17:02.808543 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
-08:17:02.812437 [debug] [MainThread]: STDOUT: "b''"
-08:17:02.812931 [debug] [MainThread]: STDERR: "b''"
-08:17:02.813186 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
-08:17:04.317906 [debug] [MainThread]: STDOUT: "b''"
-08:17:04.318524 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
-08:17:04.318828 [debug] [MainThread]: Executing "git tag --list"
-08:17:04.324343 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
-08:17:04.324967 [debug] [MainThread]: STDERR: "b''"
-08:17:04.325269 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
-08:17:04.342504 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
-08:17:04.343042 [debug] [MainThread]: STDERR: "b''"
-08:17:04.343376 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:17:04.348025 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:17:04.348596 [debug] [MainThread]: STDERR: "b''"
-08:17:04.348941 [debug] [MainThread]: Already at 5717b10, nothing to do.
-08:17:04.361455 [info ] [MainThread]: Installing https://github.com/fishtown-analytics/dbt-utils.git
-08:17:04.362068 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
-08:17:04.366615 [debug] [MainThread]: STDOUT: "b''"
-08:17:04.367245 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
-08:17:04.367534 [debug] [MainThread]: command return code=128
-08:17:04.369118 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
-08:17:04.369420 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:17:04.373849 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:17:04.374476 [debug] [MainThread]: STDERR: "b''"
-08:17:04.374763 [debug] [MainThread]:   Checking out revision 0.8.2.
-08:17:04.375027 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
-08:17:04.380347 [debug] [MainThread]: STDOUT: "b''"
-08:17:04.380869 [debug] [MainThread]: STDERR: "b''"
-08:17:04.381136 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
-08:17:05.761915 [debug] [MainThread]: STDOUT: "b''"
-08:17:05.762553 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
-08:17:05.762856 [debug] [MainThread]: Executing "git tag --list"
-08:17:05.767729 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
-08:17:05.768279 [debug] [MainThread]: STDERR: "b''"
-08:17:05.768568 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
-08:17:05.775975 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
-08:17:05.776490 [debug] [MainThread]: STDERR: "b''"
-08:17:05.776780 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:17:05.780511 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:17:05.781003 [debug] [MainThread]: STDERR: "b''"
-08:17:05.781273 [debug] [MainThread]: Already at 5717b10, nothing to do.
-08:17:05.781621 [info ] [MainThread]:   Installed from revision 0.8.2
+============================== 2023-02-23 09:39:02.327663 | 9cfb6273-a837-45ef-8e10-e61e05ff3b72 ==============================
+09:39:02.327679 [info ] [MainThread]: Running with dbt=1.1.3
+09:39:02.328342 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+09:39:02.328596 [debug] [MainThread]: Tracking: do not track
+09:39:02.333183 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-9yq6yyak'
+09:39:02.334162 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+09:39:03.932754 [debug] [MainThread]: STDOUT: "b''"
+09:39:03.933838 [debug] [MainThread]: STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
+09:39:03.934986 [debug] [MainThread]: Pulling new dependency 859fd0fa21176efee375a447937f7a46.
+09:39:03.935522 [debug] [MainThread]: Executing "git rev-parse HEAD"
+09:39:03.942386 [debug] [MainThread]: STDOUT: "b'dcc9f47e805dbe83e862628591d2451c29cee7b5\n'"
+09:39:03.942974 [debug] [MainThread]: STDERR: "b''"
+09:39:03.943342 [debug] [MainThread]:   Checking out revision 0.8.2.
+09:39:03.943668 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
+09:39:03.949804 [debug] [MainThread]: STDOUT: "b''"
+09:39:03.950502 [debug] [MainThread]: STDERR: "b''"
+09:39:03.950846 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
+09:39:06.166620 [debug] [MainThread]: STDOUT: "b''"
+09:39:06.167261 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n * [new tag]         0.0.1      -> 0.0.1\n * [new tag]         0.1.0      -> 0.1.0\n * [new tag]         0.1.1      -> 0.1.1\n * [new tag]         0.1.10     -> 0.1.10\n * [new tag]         0.1.11     -> 0.1.11\n * [new tag]         0.1.12     -> 0.1.12\n * [new tag]         0.1.13     -> 0.1.13\n * [new tag]         0.1.14     -> 0.1.14\n * [new tag]         0.1.15     -> 0.1.15\n * [new tag]         0.1.16     -> 0.1.16\n * [new tag]         0.1.17     -> 0.1.17\n * [new tag]         0.1.18     -> 0.1.18\n * [new tag]         0.1.19     -> 0.1.19\n * [new tag]         0.1.2      -> 0.1.2\n * [new tag]         0.1.20     -> 0.1.20\n * [new tag]         0.1.21     -> 0.1.21\n * [new tag]         0.1.22     -> 0.1.22\n * [new tag]         0.1.23     -> 0.1.23\n * [new tag]         0.1.24     -> 0.1.24\n * [new tag]         0.1.25     -> 0.1.25\n * [new tag]         0.1.3      -> 0.1.3\n * [new tag]         0.1.4      -> 0.1.4\n * [new tag]         0.1.5      -> 0.1.5\n * [new tag]         0.1.6      -> 0.1.6\n * [new tag]         0.1.7      -> 0.1.7\n * [new tag]         0.1.8      -> 0.1.8\n * [new tag]         0.1.9      -> 0.1.9\n * [new tag]         0.2.0      -> 0.2.0\n * [new tag]         0.2.1      -> 0.2.1\n * [new tag]         0.2.2      -> 0.2.2\n * [new tag]         0.2.3      -> 0.2.3\n * [new tag]         0.2.4      -> 0.2.4\n * [new tag]         0.2.5      -> 0.2.5\n * [new tag]         0.3.0      -> 0.3.0\n * [new tag]         0.4.0      -> 0.4.0\n * [new tag]         0.4.1      -> 0.4.1\n * [new tag]         0.5.0      -> 0.5.0\n * [new tag]         0.5.1      -> 0.5.1\n * [new tag]         0.6.0      -> 0.6.0\n * [new tag]         0.6.1      -> 0.6.1\n * [new tag]         0.6.2      -> 0.6.2\n * [new tag]         0.6.3      -> 0.6.3\n * [new tag]         0.6.4      -> 0.6.4\n * [new tag]         0.6.5      -> 0.6.5\n * [new tag]         0.6.6      -> 0.6.6\n * [new tag]         0.7.0      -> 0.7.0\n * [new tag]         0.7.1      -> 0.7.1\n * [new tag]         0.7.2      -> 0.7.2\n * [new tag]         0.7.3      -> 0.7.3\n * [new tag]         0.7.4      -> 0.7.4\n * [new tag]         0.7.4-b1   -> 0.7.4-b1\n * [new tag]         0.7.4b1    -> 0.7.4b1\n * [new tag]         0.7.5      -> 0.7.5\n * [new tag]         0.7.6      -> 0.7.6\n * [new tag]         0.8.0      -> 0.8.0\n * [new tag]         0.8.1      -> 0.8.1\n * [new tag]         0.8.2      -> 0.8.2\n * [new tag]         0.8.3      -> 0.8.3\n * [new tag]         0.8.4      -> 0.8.4\n * [new tag]         0.8.5      -> 0.8.5\n * [new tag]         0.8.6      -> 0.8.6\n * [new tag]         0.9.0      -> 0.9.0\n * [new tag]         0.9.1      -> 0.9.1\n * [new tag]         0.9.2      -> 0.9.2\n * [new tag]         0.9.5      -> 0.9.5\n * [new tag]         0.9.6      -> 0.9.6\n * [new tag]         1.0.0      -> 1.0.0\n * [new tag]         1.0.0-b1   -> 1.0.0-b1\n * [new tag]         1.0.0-b2   -> 1.0.0-b2\n * [new tag]         1.0.0-rc1  -> 1.0.0-rc1\n'"
+09:39:06.167605 [debug] [MainThread]: Executing "git tag --list"
+09:39:06.172965 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
+09:39:06.174044 [debug] [MainThread]: STDERR: "b''"
+09:39:06.174350 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
+09:39:06.198167 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+09:39:06.198658 [debug] [MainThread]: STDERR: "b''"
+09:39:06.198950 [debug] [MainThread]: Executing "git rev-parse HEAD"
+09:39:06.202589 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+09:39:06.203058 [debug] [MainThread]: STDERR: "b''"
+09:39:06.203343 [debug] [MainThread]:   Checked out at 5717b10.
+09:39:06.213809 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+09:39:06.218254 [debug] [MainThread]: STDOUT: "b''"
+09:39:06.218721 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+09:39:06.218974 [debug] [MainThread]: command return code=128
+09:39:06.220803 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+09:39:06.221218 [debug] [MainThread]: Executing "git rev-parse HEAD"
+09:39:06.225150 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+09:39:06.225618 [debug] [MainThread]: STDERR: "b''"
+09:39:06.225893 [debug] [MainThread]:   Checking out revision 0.8.2.
+09:39:06.226173 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
+09:39:06.236445 [debug] [MainThread]: STDOUT: "b''"
+09:39:06.236930 [debug] [MainThread]: STDERR: "b''"
+09:39:06.237211 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
+09:39:07.701895 [debug] [MainThread]: STDOUT: "b''"
+09:39:07.702608 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
+09:39:07.702928 [debug] [MainThread]: Executing "git tag --list"
+09:39:07.708532 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
+09:39:07.709111 [debug] [MainThread]: STDERR: "b''"
+09:39:07.709419 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
+09:39:07.721617 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+09:39:07.722134 [debug] [MainThread]: STDERR: "b''"
+09:39:07.722430 [debug] [MainThread]: Executing "git rev-parse HEAD"
+09:39:07.726049 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+09:39:07.726514 [debug] [MainThread]: STDERR: "b''"
+09:39:07.726793 [debug] [MainThread]: Already at 5717b10, nothing to do.
+09:39:07.737923 [info ] [MainThread]: Installing https://github.com/fishtown-analytics/dbt-utils.git
+09:39:07.738511 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+09:39:07.742362 [debug] [MainThread]: STDOUT: "b''"
+09:39:07.742835 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+09:39:07.743098 [debug] [MainThread]: command return code=128
+09:39:07.744554 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+09:39:07.744820 [debug] [MainThread]: Executing "git rev-parse HEAD"
+09:39:07.748606 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+09:39:07.749083 [debug] [MainThread]: STDERR: "b''"
+09:39:07.749364 [debug] [MainThread]:   Checking out revision 0.8.2.
+09:39:07.749663 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
+09:39:07.753863 [debug] [MainThread]: STDOUT: "b''"
+09:39:07.754437 [debug] [MainThread]: STDERR: "b''"
+09:39:07.754703 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
+09:39:09.208382 [debug] [MainThread]: STDOUT: "b''"
+09:39:09.209011 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
+09:39:09.209320 [debug] [MainThread]: Executing "git tag --list"
+09:39:09.214551 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
+09:39:09.215036 [debug] [MainThread]: STDERR: "b''"
+09:39:09.215325 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
+09:39:09.222199 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+09:39:09.222685 [debug] [MainThread]: STDERR: "b''"
+09:39:09.222967 [debug] [MainThread]: Executing "git rev-parse HEAD"
+09:39:09.226564 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+09:39:09.227016 [debug] [MainThread]: STDERR: "b''"
+09:39:09.227292 [debug] [MainThread]: Already at 5717b10, nothing to do.
+09:39:09.227641 [info ] [MainThread]:   Installed from revision 0.8.2
 
 
-============================== 2023-02-23 08:17:24.747952 | 8dd25ca5-917d-4ac3-82f3-2b20942023ed ==============================
-08:17:24.747976 [info ] [MainThread]: Running with dbt=1.1.3
-08:17:24.749617 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
-08:17:24.750140 [debug] [MainThread]: Tracking: do not track
-08:17:24.790317 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
-08:17:24.834555 [debug] [MainThread]: Parsing macros/should_full_refresh.sql
-08:17:24.859962 [debug] [MainThread]: Parsing macros/get_custom_schema.sql
-08:17:24.861023 [debug] [MainThread]: Parsing macros/star_intersect.sql
-08:17:24.871672 [debug] [MainThread]: Parsing macros/incremental.sql
-08:17:24.883631 [debug] [MainThread]: Parsing macros/clean_tmp_tables.sql
-08:17:24.886855 [debug] [MainThread]: Parsing macros/configuration.sql
-08:17:24.890096 [debug] [MainThread]: Parsing macros/schema_tests/equal_rowcount.sql
-08:17:24.891897 [debug] [MainThread]: Parsing macros/schema_tests/equality.sql
-08:17:24.901992 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
-08:17:24.902983 [debug] [MainThread]: Parsing macros/cross_db_utils/surrogate_key.sql
-08:17:24.906223 [debug] [MainThread]: Parsing macros/cross_db_utils/quote.sql
-08:17:24.908802 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
-08:17:24.944665 [debug] [MainThread]: Parsing macros/cross_db_utils/columns.sql
-08:17:24.948968 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
-08:17:24.949942 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
-08:17:24.951210 [debug] [MainThread]: Parsing macros/cross_db_utils/type_conversions.sql
-08:17:24.965046 [debug] [MainThread]: Parsing macros/cross_db_utils/json_operations.sql
-08:17:25.031450 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
-08:17:25.036147 [debug] [MainThread]: Parsing macros/cross_db_utils/array.sql
-08:17:25.093154 [debug] [MainThread]: Parsing macros/catalog.sql
-08:17:25.096182 [debug] [MainThread]: Parsing macros/adapters.sql
-08:17:25.110256 [debug] [MainThread]: Parsing macros/materializations/incremental/helpers.sql
-08:17:25.113791 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
-08:17:25.124543 [debug] [MainThread]: Parsing macros/materializations/test/test.sql
-08:17:25.126823 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot_merge.sql
-08:17:25.130145 [debug] [MainThread]: Parsing macros/materializations/snapshot/strategies.sql
-08:17:25.131432 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot.sql
-08:17:25.158408 [debug] [MainThread]: Parsing macros/materializations/seed/seed.sql
-08:17:25.164673 [debug] [MainThread]: Parsing macros/materializations/configs.sql
-08:17:25.168416 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
-08:17:25.174793 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
-08:17:25.195381 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
-08:17:25.198114 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
-08:17:25.226238 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
-08:17:25.243518 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
-08:17:25.246498 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
-08:17:25.249634 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
-08:17:25.257250 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
-08:17:25.281945 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
-08:17:25.306282 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
-08:17:25.322720 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
-08:17:25.325254 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
-08:17:25.332678 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
-08:17:25.334849 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
-08:17:25.346228 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
-08:17:25.350142 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
-08:17:25.354606 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
-08:17:25.359297 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
-08:17:25.371108 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
-08:17:25.396532 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
-08:17:25.406751 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
-08:17:25.409268 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
-08:17:25.413307 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
-08:17:25.415929 [debug] [MainThread]: Parsing macros/adapters/relation.sql
-08:17:25.431682 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
-08:17:25.443616 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
-08:17:25.448516 [debug] [MainThread]: Parsing macros/adapters/schema.sql
-08:17:25.452341 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
-08:17:25.457174 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
-08:17:25.464497 [debug] [MainThread]: Parsing macros/adapters/columns.sql
-08:17:25.480788 [debug] [MainThread]: Parsing macros/etc/statement.sql
-08:17:25.488265 [debug] [MainThread]: Parsing macros/etc/datetime.sql
-08:17:25.501560 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
-08:17:25.502721 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
-08:17:25.504203 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
-08:17:25.505518 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
-08:17:25.507795 [debug] [MainThread]: Parsing tests/generic/builtin.sql
-08:17:25.512877 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
-08:17:25.515481 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
-08:17:25.519854 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
-08:17:25.523096 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
-08:17:25.561865 [debug] [MainThread]: Parsing macros/schema_tests/equal_rowcount.sql
-08:17:25.564680 [debug] [MainThread]: Parsing macros/schema_tests/recency.sql
-08:17:25.567661 [debug] [MainThread]: Parsing macros/schema_tests/expression_is_true.sql
-08:17:25.570850 [debug] [MainThread]: Parsing macros/schema_tests/not_accepted_values.sql
-08:17:25.574422 [debug] [MainThread]: Parsing macros/schema_tests/equality.sql
-08:17:25.580319 [debug] [MainThread]: Parsing macros/schema_tests/test_not_null_where.sql
-08:17:25.582777 [debug] [MainThread]: Parsing macros/schema_tests/unique_combination_of_columns.sql
-08:17:25.587298 [debug] [MainThread]: Parsing macros/schema_tests/relationships_where.sql
-08:17:25.590900 [debug] [MainThread]: Parsing macros/schema_tests/accepted_range.sql
-08:17:25.595137 [debug] [MainThread]: Parsing macros/schema_tests/cardinality_equality.sql
-08:17:25.598370 [debug] [MainThread]: Parsing macros/schema_tests/mutually_exclusive_ranges.sql
-08:17:25.612082 [debug] [MainThread]: Parsing macros/schema_tests/test_unique_where.sql
-08:17:25.614474 [debug] [MainThread]: Parsing macros/schema_tests/not_null_proportion.sql
-08:17:25.618224 [debug] [MainThread]: Parsing macros/schema_tests/fewer_rows_than.sql
-08:17:25.620968 [debug] [MainThread]: Parsing macros/schema_tests/at_least_one.sql
-08:17:25.623037 [debug] [MainThread]: Parsing macros/schema_tests/not_constant.sql
-08:17:25.625162 [debug] [MainThread]: Parsing macros/schema_tests/sequential_values.sql
-08:17:25.630063 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
-08:17:25.631843 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
-08:17:25.633695 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
-08:17:25.635709 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
-08:17:25.637692 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
-08:17:25.647291 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
-08:17:25.655935 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
-08:17:25.658699 [debug] [MainThread]: Parsing macros/sql/groupby.sql
-08:17:25.660948 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
-08:17:25.666747 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
-08:17:25.669535 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
-08:17:25.675162 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
-08:17:25.678944 [debug] [MainThread]: Parsing macros/sql/star.sql
-08:17:25.686424 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
-08:17:25.689226 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
-08:17:25.699351 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
-08:17:25.706250 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
-08:17:25.708992 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
-08:17:25.715801 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
-08:17:25.728944 [debug] [MainThread]: Parsing macros/sql/union.sql
-08:17:25.745569 [debug] [MainThread]: Parsing macros/sql/pivot.sql
-08:17:25.752352 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
-08:17:25.754380 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
-08:17:25.759938 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
-08:17:25.762610 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
-08:17:25.764394 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
-08:17:25.770205 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
-08:17:25.772653 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
-08:17:25.775380 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
-08:17:25.777550 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
-08:17:25.780662 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
-08:17:25.784372 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
-08:17:25.786987 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
-08:17:25.788876 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
-08:17:25.795262 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
-08:17:25.811762 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
-08:17:25.822131 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
-08:17:25.825300 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
-08:17:25.828575 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
-08:17:25.831573 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
-08:17:25.833988 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
-08:17:25.842168 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
-08:17:25.844339 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
-08:17:25.846842 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
-08:17:25.851425 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
-08:17:25.853239 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
-08:17:25.855324 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
-08:17:25.856922 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
-08:17:26.587242 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:17:26.649833 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:17:26.652073 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab3.sql
-08:17:26.697322 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab3.sql
-08:17:26.700437 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab1.sql
-08:17:26.771351 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab1.sql
-08:17:26.773494 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:17:26.785930 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:17:26.893336 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+============================== 2023-02-23 09:40:22.187173 | 4aa3838a-8a0d-4e39-b30d-745d4de2cfb9 ==============================
+09:40:22.187196 [info ] [MainThread]: Running with dbt=1.1.3
+09:40:22.187980 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+09:40:22.188315 [debug] [MainThread]: Tracking: do not track
+09:40:22.223700 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+09:40:22.262987 [debug] [MainThread]: Parsing macros/should_full_refresh.sql
+09:40:22.272791 [debug] [MainThread]: Parsing macros/get_custom_schema.sql
+09:40:22.273896 [debug] [MainThread]: Parsing macros/star_intersect.sql
+09:40:22.284027 [debug] [MainThread]: Parsing macros/incremental.sql
+09:40:22.295710 [debug] [MainThread]: Parsing macros/clean_tmp_tables.sql
+09:40:22.299043 [debug] [MainThread]: Parsing macros/configuration.sql
+09:40:22.302389 [debug] [MainThread]: Parsing macros/schema_tests/equal_rowcount.sql
+09:40:22.304267 [debug] [MainThread]: Parsing macros/schema_tests/equality.sql
+09:40:22.314509 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+09:40:22.315561 [debug] [MainThread]: Parsing macros/cross_db_utils/surrogate_key.sql
+09:40:22.318698 [debug] [MainThread]: Parsing macros/cross_db_utils/quote.sql
+09:40:22.321296 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+09:40:22.358174 [debug] [MainThread]: Parsing macros/cross_db_utils/columns.sql
+09:40:22.362738 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+09:40:22.363759 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+09:40:22.365140 [debug] [MainThread]: Parsing macros/cross_db_utils/type_conversions.sql
+09:40:22.379427 [debug] [MainThread]: Parsing macros/cross_db_utils/json_operations.sql
+09:40:22.447110 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+09:40:22.452033 [debug] [MainThread]: Parsing macros/cross_db_utils/array.sql
+09:40:22.511005 [debug] [MainThread]: Parsing macros/catalog.sql
+09:40:22.514082 [debug] [MainThread]: Parsing macros/adapters.sql
+09:40:22.528536 [debug] [MainThread]: Parsing macros/materializations/incremental/helpers.sql
+09:40:22.532224 [debug] [MainThread]: Parsing macros/materializations/incremental/incremental.sql
+09:40:22.543198 [debug] [MainThread]: Parsing macros/materializations/test/test.sql
+09:40:22.545520 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot_merge.sql
+09:40:22.548934 [debug] [MainThread]: Parsing macros/materializations/snapshot/strategies.sql
+09:40:22.550322 [debug] [MainThread]: Parsing macros/materializations/snapshot/snapshot.sql
+09:40:22.578340 [debug] [MainThread]: Parsing macros/materializations/seed/seed.sql
+09:40:22.584883 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+09:40:22.588878 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+09:40:22.595526 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+09:40:22.616137 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+09:40:22.618933 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+09:40:22.647687 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+09:40:22.665261 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+09:40:22.668420 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+09:40:22.671523 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+09:40:22.679192 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+09:40:22.705434 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+09:40:22.730045 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+09:40:22.746971 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+09:40:22.749658 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+09:40:22.757394 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+09:40:22.759689 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+09:40:22.771474 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+09:40:22.775357 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+09:40:22.780020 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+09:40:22.785022 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+09:40:22.797286 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+09:40:22.823702 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+09:40:22.834124 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+09:40:22.836708 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+09:40:22.840981 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+09:40:22.843711 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+09:40:22.860013 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+09:40:22.872422 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+09:40:22.877443 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+09:40:22.881259 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+09:40:22.886152 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+09:40:22.894060 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+09:40:22.910963 [debug] [MainThread]: Parsing macros/etc/statement.sql
+09:40:22.918700 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+09:40:22.932574 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+09:40:22.933824 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+09:40:22.935266 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+09:40:22.936733 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+09:40:22.939112 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+09:40:22.944191 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+09:40:22.946980 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+09:40:22.951596 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+09:40:22.954987 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+09:40:22.995467 [debug] [MainThread]: Parsing macros/schema_tests/equal_rowcount.sql
+09:40:22.998239 [debug] [MainThread]: Parsing macros/schema_tests/recency.sql
+09:40:23.001266 [debug] [MainThread]: Parsing macros/schema_tests/expression_is_true.sql
+09:40:23.004528 [debug] [MainThread]: Parsing macros/schema_tests/not_accepted_values.sql
+09:40:23.008231 [debug] [MainThread]: Parsing macros/schema_tests/equality.sql
+09:40:23.014207 [debug] [MainThread]: Parsing macros/schema_tests/test_not_null_where.sql
+09:40:23.016761 [debug] [MainThread]: Parsing macros/schema_tests/unique_combination_of_columns.sql
+09:40:23.021709 [debug] [MainThread]: Parsing macros/schema_tests/relationships_where.sql
+09:40:23.025457 [debug] [MainThread]: Parsing macros/schema_tests/accepted_range.sql
+09:40:23.029864 [debug] [MainThread]: Parsing macros/schema_tests/cardinality_equality.sql
+09:40:23.033296 [debug] [MainThread]: Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+09:40:23.047241 [debug] [MainThread]: Parsing macros/schema_tests/test_unique_where.sql
+09:40:23.049818 [debug] [MainThread]: Parsing macros/schema_tests/not_null_proportion.sql
+09:40:23.053665 [debug] [MainThread]: Parsing macros/schema_tests/fewer_rows_than.sql
+09:40:23.056431 [debug] [MainThread]: Parsing macros/schema_tests/at_least_one.sql
+09:40:23.058656 [debug] [MainThread]: Parsing macros/schema_tests/not_constant.sql
+09:40:23.060834 [debug] [MainThread]: Parsing macros/schema_tests/sequential_values.sql
+09:40:23.065851 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+09:40:23.067807 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+09:40:23.069864 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+09:40:23.071988 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+09:40:23.074026 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+09:40:23.083885 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+09:40:23.092772 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+09:40:23.095556 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+09:40:23.097955 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+09:40:23.103936 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+09:40:23.106917 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+09:40:23.112735 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+09:40:23.116730 [debug] [MainThread]: Parsing macros/sql/star.sql
+09:40:23.124242 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+09:40:23.127030 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+09:40:23.138033 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+09:40:23.145349 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+09:40:23.148245 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+09:40:23.155456 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+09:40:23.169013 [debug] [MainThread]: Parsing macros/sql/union.sql
+09:40:23.186261 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+09:40:23.193370 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+09:40:23.195444 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+09:40:23.201178 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+09:40:23.203835 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+09:40:23.205641 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+09:40:23.211707 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+09:40:23.214293 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+09:40:23.217143 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+09:40:23.219313 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+09:40:23.223008 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+09:40:23.227490 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+09:40:23.230373 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+09:40:23.232420 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+09:40:23.238599 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+09:40:23.255122 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+09:40:23.265933 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+09:40:23.269191 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+09:40:23.272628 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+09:40:23.275773 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+09:40:23.278225 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+09:40:23.286527 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+09:40:23.288801 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+09:40:23.291450 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+09:40:23.296336 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+09:40:23.298218 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+09:40:23.300328 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+09:40:23.301923 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+09:40:24.052349 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
+09:40:24.138400 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
+09:40:24.141078 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab3.sql
+09:40:24.186755 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab3.sql
+09:40:24.190069 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab1.sql
+09:40:24.261429 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab1.sql
+09:40:24.263545 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_tables/bid/thong_tin_goi_thau.sql
+09:40:24.276138 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_tables/bid/thong_tin_goi_thau.sql
+09:40:24.384670 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
 There are 2 unused configuration paths:
-- models.airbyte_utils.generated.airbyte_incremental
 - models.airbyte_utils.generated.airbyte_views
+- models.airbyte_utils.generated.airbyte_incremental
 
-08:17:26.957832 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 593 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
-08:17:26.959942 [info ] [MainThread]: 
-08:17:26.960784 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:17:26.961977 [debug] [ThreadPool]: Acquiring new mysql connection "list_schemas"
-08:17:26.978439 [debug] [ThreadPool]: Using mysql connection "list_schemas"
-08:17:26.978772 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_schemas"} */
+09:40:24.449140 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 593 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+09:40:24.451247 [info ] [MainThread]: 
+09:40:24.452091 [debug] [MainThread]: Acquiring new mysql connection "master"
+09:40:24.453339 [debug] [ThreadPool]: Acquiring new mysql connection "list_schemas"
+09:40:24.478808 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+09:40:24.479341 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_schemas"} */
 select distinct schema_name
         from information_schema.schemata
-08:17:26.979030 [debug] [ThreadPool]: Opening a new connection, currently in state init
-08:17:27.010540 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.03 seconds
-08:17:27.012563 [debug] [ThreadPool]: On list_schemas: Close
-08:17:27.014424 [debug] [ThreadPool]: Acquiring new mysql connection "list_None_bid"
-08:17:27.024172 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:17:27.024468 [debug] [ThreadPool]: On list_None_bid: BEGIN
-08:17:27.024714 [debug] [ThreadPool]: Opening a new connection, currently in state closed
-08:17:27.030574 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.01 seconds
-08:17:27.030879 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:17:27.031126 [debug] [ThreadPool]: On list_None_bid: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_None_bid"} */
+09:40:24.479588 [debug] [ThreadPool]: Opening a new connection, currently in state init
+09:40:24.493132 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.01 seconds
+09:40:24.495292 [debug] [ThreadPool]: On list_schemas: Close
+09:40:24.497123 [debug] [ThreadPool]: Acquiring new mysql connection "list_None_bid"
+09:40:24.508404 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
+09:40:24.508749 [debug] [ThreadPool]: On list_None_bid: BEGIN
+09:40:24.509038 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+09:40:24.515645 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.01 seconds
+09:40:24.515942 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
+09:40:24.516209 [debug] [ThreadPool]: On list_None_bid: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_None_bid"} */
 select
       null as "database",
       table_name as name,
@@ -290,1629 +312,56 @@ select
     from information_schema.tables
     where table_schema = 'bid'
   
-08:17:27.033321 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
-08:17:27.035067 [debug] [ThreadPool]: On list_None_bid: ROLLBACK
-08:17:27.035545 [debug] [ThreadPool]: On list_None_bid: Close
-08:17:27.036655 [debug] [MainThread]: Using mysql connection "master"
-08:17:27.036953 [debug] [MainThread]: On master: BEGIN
-08:17:27.037202 [debug] [MainThread]: Opening a new connection, currently in state init
-08:17:27.044395 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:17:27.044880 [debug] [MainThread]: On master: COMMIT
-08:17:27.045259 [debug] [MainThread]: Using mysql connection "master"
-08:17:27.045700 [debug] [MainThread]: On master: COMMIT
-08:17:27.046620 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:17:27.047115 [debug] [MainThread]: On master: Close
-08:17:27.048178 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
-08:17:27.049029 [info ] [MainThread]: 
-08:17:27.077360 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:17:27.078178 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:17:27.078543 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:17:27.078828 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab1
-08:17:27.156000 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:17:27.156984 [debug] [Thread-1  ]: finished collecting timing info
-08:17:27.157838 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:17:27.158846 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:17:27.159426 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:17:27.160015 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:17:27.160383 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab2
-08:17:27.279427 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:17:27.279849 [debug] [Thread-1  ]: finished collecting timing info
-08:17:27.280563 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:17:27.281360 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:17:27.281990 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:17:27.282252 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:17:27.282498 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab3
-08:17:27.385994 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:17:27.386397 [debug] [Thread-1  ]: finished collecting timing info
-08:17:27.386984 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:17:27.387744 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau
-08:17:27.388143 [info ] [Thread-1  ]: 1 of 1 START table model bid.thong_tin_goi_thau ........................................................................ [RUN]
-08:17:27.388822 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:17:27.389069 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau
-08:17:27.389308 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau
-08:17:27.414517 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:17:27.415088 [debug] [Thread-1  ]: finished collecting timing info
-08:17:27.415361 [debug] [Thread-1  ]: Began executing node model.airbyte_utils.thong_tin_goi_thau
-08:17:27.458274 [debug] [Thread-1  ]: Writing runtime SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:17:27.459221 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:17:27.459479 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: BEGIN
-08:17:27.459723 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
-08:17:27.465368 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
-08:17:27.465628 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:17:27.465867 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
-
-
-  create  table
-    bid.`thong_tin_goi_thau__dbt_tmp`
-  as (
-    
-with __dbt__cte__thong_tin_goi_thau_ab1 as (
-
--- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
--- depends_on: bid._airbyte_raw_thong_tin_goi_thau
-select
-    json_value(_airbyte_data, 
-    '$."id"' RETURNING CHAR) as id,
-    json_value(_airbyte_data, 
-    '$."link"' RETURNING CHAR) as link,
-    json_value(_airbyte_data, 
-    '$."deleted"' RETURNING CHAR) as deleted,
-    json_value(_airbyte_data, 
-    '$."loai_tb"' RETURNING CHAR) as loai_tb,
-    json_value(_airbyte_data, 
-    '$."so_tbmt"' RETURNING CHAR) as so_tbmt,
-    json_value(_airbyte_data, 
-    '$."linh_vuc"' RETURNING CHAR) as linh_vuc,
-    json_value(_airbyte_data, 
-    '$."services"' RETURNING CHAR) as services,
-    json_value(_airbyte_data, 
-    '$."nguon_von"' RETURNING CHAR) as nguon_von,
-    json_value(_airbyte_data, 
-    '$."phan_loai"' RETURNING CHAR) as phan_loai,
-    json_value(_airbyte_data, 
-    '$."tien_dbdt"' RETURNING CHAR) as tien_dbdt,
-    json_value(_airbyte_data, 
-    '$."timestamp"' RETURNING CHAR) as `timestamp`,
-    json_value(_airbyte_data, 
-    '$."company_id"' RETURNING CHAR) as company_id,
-    json_value(_airbyte_data, 
-    '$."ten_khlcnt"' RETURNING CHAR) as ten_khlcnt,
-    json_value(_airbyte_data, 
-    '$."trang_thai"' RETURNING CHAR) as trang_thai,
-    json_value(_airbyte_data, 
-    '$."gia_du_toan"' RETURNING CHAR) as gia_du_toan,
-    json_value(_airbyte_data, 
-    '$."ten_du_toan"' RETURNING CHAR) as ten_du_toan,
-    json_value(_airbyte_data, 
-    '$."ben_moi_thau"' RETURNING CHAR) as ben_moi_thau,
-    json_value(_airbyte_data, 
-    '$."gia_goi_thau"' RETURNING CHAR) as gia_goi_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_tb"' RETURNING CHAR) as hinh_thuc_tb,
-    json_value(_airbyte_data, 
-    '$."send_mail_id"' RETURNING CHAR) as send_mail_id,
-    json_value(_airbyte_data, 
-    '$."ten_goi_thau"' RETURNING CHAR) as ten_goi_thau,
-    json_value(_airbyte_data, 
-    '$."competitor_id"' RETURNING CHAR) as competitor_id,
-    json_value(_airbyte_data, 
-    '$."loai_hop_dong"' RETURNING CHAR) as loai_hop_dong,
-    json_value(_airbyte_data, 
-    '$."score_by_name"' RETURNING CHAR) as score_by_name,
-    json_value(_airbyte_data, 
-    '$."score_service"' RETURNING CHAR) as score_service,
-    json_value(_airbyte_data, 
-    '$."gia_trung_thau"' RETURNING CHAR) as gia_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_dbdt"' RETURNING CHAR) as hinh_thuc_dbdt,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_lcnt"' RETURNING CHAR) as hinh_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."ngay_phe_duyet"' RETURNING CHAR) as ngay_phe_duyet,
-    json_value(_airbyte_data, 
-    '$."score_by_scope"' RETURNING CHAR) as score_by_scope,
-    json_value(_airbyte_data, 
-    '$."so_hieu_khlcnt"' RETURNING CHAR) as so_hieu_khlcnt,
-    json_value(_airbyte_data, 
-    '$."hieu_luc_e_hsdt"' RETURNING CHAR) as hieu_luc_e_hsdt,
-    json_value(_airbyte_data, 
-    '$."so_tbmt_version"' RETURNING CHAR) as so_tbmt_version,
-    json_value(_airbyte_data, 
-    '$."dia_diem_mo_thau"' RETURNING CHAR) as dia_diem_mo_thau,
-    json_value(_airbyte_data, 
-    '$."phuong_thuc_lcnt"' RETURNING CHAR) as phuong_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."services_by_name"' RETURNING CHAR) as services_by_name,
-    json_value(_airbyte_data, 
-    '$."don_vi_trung_thau"' RETURNING CHAR) as don_vi_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_du_thau"' RETURNING CHAR) as hinh_thuc_du_thau,
-    json_value(_airbyte_data, 
-    '$."services_by_scope"' RETURNING CHAR) as services_by_scope,
-    json_value(_airbyte_data, 
-    '$."dia_diem_nhan_hsdt"' RETURNING CHAR) as dia_diem_nhan_hsdt,
-    json_value(_airbyte_data, 
-    '$."dia_diem_thuc_hien"' RETURNING CHAR) as dia_diem_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_tu_ngay"' RETURNING CHAR) as nhan_e_hsdt_tu_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_gian_thuc_hien"' RETURNING CHAR) as thoi_gian_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_den_ngay"' RETURNING CHAR) as nhan_e_hsdt_den_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_diem_dong_mo_thau"' RETURNING CHAR) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from bid._airbyte_raw_thong_tin_goi_thau as table_alias
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab2 as (
-
--- SQL model to cast each column to its adequate SQL type converted from the JSON schema type
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab1
-select
-    cast(id as 
-    signed
-) as id,
-    cast(link as char(1024)) as link,
-    cast(deleted as 
-    signed
-) as deleted,
-    cast(loai_tb as char(1024)) as loai_tb,
-    cast(so_tbmt as char(1024)) as so_tbmt,
-    cast(linh_vuc as char(1024)) as linh_vuc,
-    cast(services as char(1024)) as services,
-    cast(nguon_von as char(1024)) as nguon_von,
-    cast(phan_loai as char(1024)) as phan_loai,
-    cast(tien_dbdt as char(1024)) as tien_dbdt,
-    cast(`timestamp` as char(1024)) as `timestamp`,
-    cast(company_id as char(1024)) as company_id,
-    cast(ten_khlcnt as char(1024)) as ten_khlcnt,
-    cast(trang_thai as 
-    signed
-) as trang_thai,
-    cast(gia_du_toan as char(1024)) as gia_du_toan,
-    cast(ten_du_toan as char(1024)) as ten_du_toan,
-    cast(ben_moi_thau as char(1024)) as ben_moi_thau,
-    cast(gia_goi_thau as char(1024)) as gia_goi_thau,
-    cast(hinh_thuc_tb as char(1024)) as hinh_thuc_tb,
-    cast(send_mail_id as char(1024)) as send_mail_id,
-    cast(ten_goi_thau as char(1024)) as ten_goi_thau,
-    cast(competitor_id as char(1024)) as competitor_id,
-    cast(loai_hop_dong as char(1024)) as loai_hop_dong,
-    cast(score_by_name as 
-    float
-) as score_by_name,
-    cast(score_service as 
-    float
-) as score_service,
-    cast(gia_trung_thau as char(1024)) as gia_trung_thau,
-    cast(hinh_thuc_dbdt as char(1024)) as hinh_thuc_dbdt,
-    cast(hinh_thuc_lcnt as char(1024)) as hinh_thuc_lcnt,
-    cast(ngay_phe_duyet as char(1024)) as ngay_phe_duyet,
-    cast(score_by_scope as 
-    float
-) as score_by_scope,
-    cast(so_hieu_khlcnt as char(1024)) as so_hieu_khlcnt,
-    cast(hieu_luc_e_hsdt as char(1024)) as hieu_luc_e_hsdt,
-    cast(so_tbmt_version as char(1024)) as so_tbmt_version,
-    cast(dia_diem_mo_thau as char(1024)) as dia_diem_mo_thau,
-    cast(phuong_thuc_lcnt as char(1024)) as phuong_thuc_lcnt,
-    cast(services_by_name as char(1024)) as services_by_name,
-    cast(don_vi_trung_thau as char(1024)) as don_vi_trung_thau,
-    cast(hinh_thuc_du_thau as char(1024)) as hinh_thuc_du_thau,
-    cast(services_by_scope as char(1024)) as services_by_scope,
-    cast(dia_diem_nhan_hsdt as char(1024)) as dia_diem_nhan_hsdt,
-    cast(dia_diem_thuc_hien as char(1024)) as dia_diem_thuc_hien,
-    cast(nhan_e_hsdt_tu_ngay as char(1024)) as nhan_e_hsdt_tu_ngay,
-    cast(thoi_gian_thuc_hien as char(1024)) as thoi_gian_thuc_hien,
-    cast(nhan_e_hsdt_den_ngay as char(1024)) as nhan_e_hsdt_den_ngay,
-    cast(thoi_diem_dong_mo_thau as char(1024)) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from __dbt__cte__thong_tin_goi_thau_ab1
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab3 as (
-
--- SQL model to build a hash column based on the values of this record
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab2
-select
-    md5(cast(concat(coalesce(cast(id as char), ''), '-', coalesce(cast(link as char), ''), '-', coalesce(cast(deleted as char), ''), '-', coalesce(cast(loai_tb as char), ''), '-', coalesce(cast(so_tbmt as char), ''), '-', coalesce(cast(linh_vuc as char), ''), '-', coalesce(cast(services as char), ''), '-', coalesce(cast(nguon_von as char), ''), '-', coalesce(cast(phan_loai as char), ''), '-', coalesce(cast(tien_dbdt as char), ''), '-', coalesce(cast(`timestamp` as char), ''), '-', coalesce(cast(company_id as char), ''), '-', coalesce(cast(ten_khlcnt as char), ''), '-', coalesce(cast(trang_thai as char), ''), '-', coalesce(cast(gia_du_toan as char), ''), '-', coalesce(cast(ten_du_toan as char), ''), '-', coalesce(cast(ben_moi_thau as char), ''), '-', coalesce(cast(gia_goi_thau as char), ''), '-', coalesce(cast(hinh_thuc_tb as char), ''), '-', coalesce(cast(send_mail_id as char), ''), '-', coalesce(cast(ten_goi_thau as char), ''), '-', coalesce(cast(competitor_id as char), ''), '-', coalesce(cast(loai_hop_dong as char), ''), '-', coalesce(cast(score_by_name as char), ''), '-', coalesce(cast(score_service as char), ''), '-', coalesce(cast(gia_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_dbdt as char), ''), '-', coalesce(cast(hinh_thuc_lcnt as char), ''), '-', coalesce(cast(ngay_phe_duyet as char), ''), '-', coalesce(cast(score_by_scope as char), ''), '-', coalesce(cast(so_hieu_khlcnt as char), ''), '-', coalesce(cast(hieu_luc_e_hsdt as char), ''), '-', coalesce(cast(so_tbmt_version as char), ''), '-', coalesce(cast(dia_diem_mo_thau as char), ''), '-', coalesce(cast(phuong_thuc_lcnt as char), ''), '-', coalesce(cast(services_by_name as char), ''), '-', coalesce(cast(don_vi_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_du_thau as char), ''), '-', coalesce(cast(services_by_scope as char), ''), '-', coalesce(cast(dia_diem_nhan_hsdt as char), ''), '-', coalesce(cast(dia_diem_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_tu_ngay as char), ''), '-', coalesce(cast(thoi_gian_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_den_ngay as char), ''), '-', coalesce(cast(thoi_diem_dong_mo_thau as char), '')) as char)) as _airbyte_thong_tin_goi_thau_hashid,
-    tmp.*
-from __dbt__cte__thong_tin_goi_thau_ab2 tmp
--- thong_tin_goi_thau
-where 1 = 1
-)-- Final base SQL model
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab3
-select
-    id,
-    link,
-    deleted,
-    loai_tb,
-    so_tbmt,
-    linh_vuc,
-    services,
-    nguon_von,
-    phan_loai,
-    tien_dbdt,
-    `timestamp`,
-    company_id,
-    ten_khlcnt,
-    trang_thai,
-    gia_du_toan,
-    ten_du_toan,
-    ben_moi_thau,
-    gia_goi_thau,
-    hinh_thuc_tb,
-    send_mail_id,
-    ten_goi_thau,
-    competitor_id,
-    loai_hop_dong,
-    score_by_name,
-    score_service,
-    gia_trung_thau,
-    hinh_thuc_dbdt,
-    hinh_thuc_lcnt,
-    ngay_phe_duyet,
-    score_by_scope,
-    so_hieu_khlcnt,
-    hieu_luc_e_hsdt,
-    so_tbmt_version,
-    dia_diem_mo_thau,
-    phuong_thuc_lcnt,
-    services_by_name,
-    don_vi_trung_thau,
-    hinh_thuc_du_thau,
-    services_by_scope,
-    dia_diem_nhan_hsdt,
-    dia_diem_thuc_hien,
-    nhan_e_hsdt_tu_ngay,
-    thoi_gian_thuc_hien,
-    nhan_e_hsdt_den_ngay,
-    thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at,
-    _airbyte_thong_tin_goi_thau_hashid
-from __dbt__cte__thong_tin_goi_thau_ab3
--- thong_tin_goi_thau from bid._airbyte_raw_thong_tin_goi_thau
-where 1 = 1
-  )
-
-08:17:27.585119 [debug] [Thread-1  ]: mysql adapter: MySQL error: 1292 (22007): Truncated incorrect CHAR(1515) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:17:27.585509 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: ROLLBACK
-08:17:27.586240 [debug] [Thread-1  ]: finished collecting timing info
-08:17:27.586527 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: Close
-08:17:27.587226 [debug] [Thread-1  ]: Database Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)
-  1292 (22007): Truncated incorrect CHAR(1515) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-  compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:17:27.587813 [error] [Thread-1  ]: 1 of 1 ERROR creating table model bid.thong_tin_goi_thau ............................................................... [[31mERROR[0m in 0.20s]
-08:17:27.588561 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau
-08:17:27.590604 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:17:27.591126 [debug] [MainThread]: Using mysql connection "master"
-08:17:27.591598 [debug] [MainThread]: On master: BEGIN
-08:17:27.592098 [debug] [MainThread]: Opening a new connection, currently in state closed
-08:17:27.601063 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:17:27.601342 [debug] [MainThread]: On master: COMMIT
-08:17:27.601587 [debug] [MainThread]: Using mysql connection "master"
-08:17:27.601836 [debug] [MainThread]: On master: COMMIT
-08:17:27.602437 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:17:27.602714 [debug] [MainThread]: On master: Close
-08:17:27.603280 [info ] [MainThread]: 
-08:17:27.603752 [info ] [MainThread]: Finished running 1 table model in 0.64s.
-08:17:27.604254 [debug] [MainThread]: Connection 'master' was properly closed.
-08:17:27.604487 [debug] [MainThread]: Connection 'model.airbyte_utils.thong_tin_goi_thau' was properly closed.
-08:17:27.626419 [info ] [MainThread]: 
-08:17:27.626962 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
-08:17:27.627447 [info ] [MainThread]: 
-08:17:27.627880 [error] [MainThread]: [33mDatabase Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)[0m
-08:17:27.628331 [error] [MainThread]:   1292 (22007): Truncated incorrect CHAR(1515) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:17:27.628831 [error] [MainThread]:   compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:17:27.629283 [info ] [MainThread]: 
-08:17:27.629728 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
-
-
-============================== 2023-02-23 08:21:06.381771 | fba23c9a-ebca-4fbd-aec9-d0afae08ace1 ==============================
-08:21:06.381793 [info ] [MainThread]: Running with dbt=1.1.3
-08:21:06.382610 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
-08:21:06.382894 [debug] [MainThread]: Tracking: do not track
-08:21:06.515963 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
-08:21:06.516731 [debug] [MainThread]: Partial parsing: updated file: airbyte_utils://models/generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:21:06.542525 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:21:06.607600 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:21:06.620545 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
-There are 2 unused configuration paths:
-- models.airbyte_utils.generated.airbyte_views
-- models.airbyte_utils.generated.airbyte_incremental
-
-08:21:06.645926 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 593 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
-08:21:06.648116 [info ] [MainThread]: 
-08:21:06.648926 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:21:06.650369 [debug] [ThreadPool]: Acquiring new mysql connection "list_schemas"
-08:21:06.681820 [debug] [ThreadPool]: Using mysql connection "list_schemas"
-08:21:06.682338 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_schemas"} */
-select distinct schema_name
-        from information_schema.schemata
-08:21:06.682697 [debug] [ThreadPool]: Opening a new connection, currently in state init
-08:21:06.703380 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.02 seconds
-08:21:06.705598 [debug] [ThreadPool]: On list_schemas: Close
-08:21:06.707863 [debug] [ThreadPool]: Acquiring new mysql connection "list_None_bid"
-08:21:06.720013 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:21:06.720329 [debug] [ThreadPool]: On list_None_bid: BEGIN
-08:21:06.720597 [debug] [ThreadPool]: Opening a new connection, currently in state closed
-08:21:06.726338 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:06.726667 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:21:06.726916 [debug] [ThreadPool]: On list_None_bid: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_None_bid"} */
-select
-      null as "database",
-      table_name as name,
-      table_schema as "schema",
-      case when table_type = 'BASE TABLE' then 'table'
-           when table_type = 'VIEW' then 'view'
-           else table_type
-      end as table_type
-    from information_schema.tables
-    where table_schema = 'bid'
-  
-08:21:06.729063 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
-08:21:06.730811 [debug] [ThreadPool]: On list_None_bid: ROLLBACK
-08:21:06.731275 [debug] [ThreadPool]: On list_None_bid: Close
-08:21:06.732303 [debug] [MainThread]: Using mysql connection "master"
-08:21:06.732557 [debug] [MainThread]: On master: BEGIN
-08:21:06.732792 [debug] [MainThread]: Opening a new connection, currently in state init
-08:21:06.739959 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:06.740302 [debug] [MainThread]: On master: COMMIT
-08:21:06.740566 [debug] [MainThread]: Using mysql connection "master"
-08:21:06.740804 [debug] [MainThread]: On master: COMMIT
-08:21:06.741407 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:21:06.741669 [debug] [MainThread]: On master: Close
-08:21:06.742257 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
-08:21:06.742719 [info ] [MainThread]: 
-08:21:06.747155 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:06.747759 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:21:06.748141 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:06.748473 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:06.831556 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:21:06.832302 [debug] [Thread-1  ]: finished collecting timing info
-08:21:06.833106 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:06.834183 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:06.835067 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:21:06.835333 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:06.835589 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:06.948196 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:21:06.948789 [debug] [Thread-1  ]: finished collecting timing info
-08:21:06.949568 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:06.950588 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:06.951383 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:21:06.951703 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:06.951991 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:07.073889 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:21:07.074361 [debug] [Thread-1  ]: finished collecting timing info
-08:21:07.075035 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:07.075889 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau
-08:21:07.076499 [info ] [Thread-1  ]: 1 of 1 START table model bid.thong_tin_goi_thau ........................................................................ [RUN]
-08:21:07.077180 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:07.077429 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau
-08:21:07.077670 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau
-08:21:07.103867 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:21:07.104548 [debug] [Thread-1  ]: finished collecting timing info
-08:21:07.104826 [debug] [Thread-1  ]: Began executing node model.airbyte_utils.thong_tin_goi_thau
-08:21:07.148987 [debug] [Thread-1  ]: Writing runtime SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:21:07.149684 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:07.149933 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: BEGIN
-08:21:07.150230 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
-08:21:07.155758 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:07.156043 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:07.156320 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
-
-
-  create  table
-    bid.`thong_tin_goi_thau__dbt_tmp`
-  as (
-    
-with __dbt__cte__thong_tin_goi_thau_ab1 as (
-
--- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
--- depends_on: bid._airbyte_raw_thong_tin_goi_thau
-select
-    json_value(_airbyte_data, 
-    '$."id"' RETURNING CHAR) as id,
-    json_value(_airbyte_data, 
-    '$."link"' RETURNING CHAR) as link,
-    json_value(_airbyte_data, 
-    '$."deleted"' RETURNING CHAR) as deleted,
-    json_value(_airbyte_data, 
-    '$."loai_tb"' RETURNING CHAR) as loai_tb,
-    json_value(_airbyte_data, 
-    '$."so_tbmt"' RETURNING CHAR) as so_tbmt,
-    json_value(_airbyte_data, 
-    '$."linh_vuc"' RETURNING CHAR) as linh_vuc,
-    json_value(_airbyte_data, 
-    '$."services"' RETURNING CHAR) as services,
-    json_value(_airbyte_data, 
-    '$."nguon_von"' RETURNING CHAR) as nguon_von,
-    json_value(_airbyte_data, 
-    '$."phan_loai"' RETURNING CHAR) as phan_loai,
-    json_value(_airbyte_data, 
-    '$."tien_dbdt"' RETURNING CHAR) as tien_dbdt,
-    json_value(_airbyte_data, 
-    '$."timestamp"' RETURNING CHAR) as `timestamp`,
-    json_value(_airbyte_data, 
-    '$."company_id"' RETURNING CHAR) as company_id,
-    json_value(_airbyte_data, 
-    '$."ten_khlcnt"' RETURNING CHAR) as ten_khlcnt,
-    json_value(_airbyte_data, 
-    '$."trang_thai"' RETURNING CHAR) as trang_thai,
-    json_value(_airbyte_data, 
-    '$."gia_du_toan"' RETURNING CHAR) as gia_du_toan,
-    json_value(_airbyte_data, 
-    '$."ten_du_toan"' RETURNING CHAR) as ten_du_toan,
-    json_value(_airbyte_data, 
-    '$."ben_moi_thau"' RETURNING CHAR) as ben_moi_thau,
-    json_value(_airbyte_data, 
-    '$."gia_goi_thau"' RETURNING CHAR) as gia_goi_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_tb"' RETURNING CHAR) as hinh_thuc_tb,
-    json_value(_airbyte_data, 
-    '$."send_mail_id"' RETURNING CHAR) as send_mail_id,
-    json_value(_airbyte_data, 
-    '$."ten_goi_thau"' RETURNING CHAR) as ten_goi_thau,
-    json_value(_airbyte_data, 
-    '$."competitor_id"' RETURNING CHAR) as competitor_id,
-    json_value(_airbyte_data, 
-    '$."loai_hop_dong"' RETURNING CHAR) as loai_hop_dong,
-    json_value(_airbyte_data, 
-    '$."score_by_name"' RETURNING CHAR) as score_by_name,
-    json_value(_airbyte_data, 
-    '$."score_service"' RETURNING CHAR) as score_service,
-    json_value(_airbyte_data, 
-    '$."gia_trung_thau"' RETURNING CHAR) as gia_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_dbdt"' RETURNING CHAR) as hinh_thuc_dbdt,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_lcnt"' RETURNING CHAR) as hinh_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."ngay_phe_duyet"' RETURNING CHAR) as ngay_phe_duyet,
-    json_value(_airbyte_data, 
-    '$."score_by_scope"' RETURNING CHAR) as score_by_scope,
-    json_value(_airbyte_data, 
-    '$."so_hieu_khlcnt"' RETURNING CHAR) as so_hieu_khlcnt,
-    json_value(_airbyte_data, 
-    '$."hieu_luc_e_hsdt"' RETURNING CHAR) as hieu_luc_e_hsdt,
-    json_value(_airbyte_data, 
-    '$."so_tbmt_version"' RETURNING CHAR) as so_tbmt_version,
-    json_value(_airbyte_data, 
-    '$."dia_diem_mo_thau"' RETURNING CHAR) as dia_diem_mo_thau,
-    json_value(_airbyte_data, 
-    '$."phuong_thuc_lcnt"' RETURNING CHAR) as phuong_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."services_by_name"' RETURNING CHAR) as services_by_name,
-    json_value(_airbyte_data, 
-    '$."don_vi_trung_thau"' RETURNING CHAR) as don_vi_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_du_thau"' RETURNING CHAR) as hinh_thuc_du_thau,
-    json_value(_airbyte_data, 
-    '$."services_by_scope"' RETURNING CHAR) as services_by_scope,
-    json_value(_airbyte_data, 
-    '$."dia_diem_nhan_hsdt"' RETURNING CHAR) as dia_diem_nhan_hsdt,
-    json_value(_airbyte_data, 
-    '$."dia_diem_thuc_hien"' RETURNING CHAR) as dia_diem_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_tu_ngay"' RETURNING CHAR) as nhan_e_hsdt_tu_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_gian_thuc_hien"' RETURNING CHAR) as thoi_gian_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_den_ngay"' RETURNING CHAR) as nhan_e_hsdt_den_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_diem_dong_mo_thau"' RETURNING CHAR) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from bid._airbyte_raw_thong_tin_goi_thau as table_alias
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab2 as (
-
--- SQL model to cast each column to its adequate SQL type converted from the JSON schema type
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab1
-select
-    cast(id as 
-    signed
-) as id,
-    cast(link as char(2048)) as link,
-    cast(deleted as 
-    signed
-) as deleted,
-    cast(loai_tb as char(2048)) as loai_tb,
-    cast(so_tbmt as char(2048)) as so_tbmt,
-    cast(linh_vuc as char(2048)) as linh_vuc,
-    cast(services as char(2048)) as services,
-    cast(nguon_von as char(2048)) as nguon_von,
-    cast(phan_loai as char(2048)) as phan_loai,
-    cast(tien_dbdt as char(2048)) as tien_dbdt,
-    cast(`timestamp` as char(2048)) as `timestamp`,
-    cast(company_id as char(2048)) as company_id,
-    cast(ten_khlcnt as char(2048)) as ten_khlcnt,
-    cast(trang_thai as 
-    signed
-) as trang_thai,
-    cast(gia_du_toan as char(2048)) as gia_du_toan,
-    cast(ten_du_toan as char(2048)) as ten_du_toan,
-    cast(ben_moi_thau as char(2048)) as ben_moi_thau,
-    cast(gia_goi_thau as char(2048)) as gia_goi_thau,
-    cast(hinh_thuc_tb as char(2048)) as hinh_thuc_tb,
-    cast(send_mail_id as char(2048)) as send_mail_id,
-    cast(ten_goi_thau as char(2048)) as ten_goi_thau,
-    cast(competitor_id as char(2048)) as competitor_id,
-    cast(loai_hop_dong as char(2048)) as loai_hop_dong,
-    cast(score_by_name as 
-    float
-) as score_by_name,
-    cast(score_service as 
-    float
-) as score_service,
-    cast(gia_trung_thau as char(2048)) as gia_trung_thau,
-    cast(hinh_thuc_dbdt as char(2048)) as hinh_thuc_dbdt,
-    cast(hinh_thuc_lcnt as char(2048)) as hinh_thuc_lcnt,
-    cast(ngay_phe_duyet as char(2048)) as ngay_phe_duyet,
-    cast(score_by_scope as 
-    float
-) as score_by_scope,
-    cast(so_hieu_khlcnt as char(2048)) as so_hieu_khlcnt,
-    cast(hieu_luc_e_hsdt as char(2048)) as hieu_luc_e_hsdt,
-    cast(so_tbmt_version as char(2048)) as so_tbmt_version,
-    cast(dia_diem_mo_thau as char(2048)) as dia_diem_mo_thau,
-    cast(phuong_thuc_lcnt as char(2048)) as phuong_thuc_lcnt,
-    cast(services_by_name as char(2048)) as services_by_name,
-    cast(don_vi_trung_thau as char(2048)) as don_vi_trung_thau,
-    cast(hinh_thuc_du_thau as char(2048)) as hinh_thuc_du_thau,
-    cast(services_by_scope as char(2048)) as services_by_scope,
-    cast(dia_diem_nhan_hsdt as char(2048)) as dia_diem_nhan_hsdt,
-    cast(dia_diem_thuc_hien as char(2048)) as dia_diem_thuc_hien,
-    cast(nhan_e_hsdt_tu_ngay as char(2048)) as nhan_e_hsdt_tu_ngay,
-    cast(thoi_gian_thuc_hien as char(2048)) as thoi_gian_thuc_hien,
-    cast(nhan_e_hsdt_den_ngay as char(2048)) as nhan_e_hsdt_den_ngay,
-    cast(thoi_diem_dong_mo_thau as char(2048)) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from __dbt__cte__thong_tin_goi_thau_ab1
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab3 as (
-
--- SQL model to build a hash column based on the values of this record
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab2
-select
-    md5(cast(concat(coalesce(cast(id as char), ''), '-', coalesce(cast(link as char), ''), '-', coalesce(cast(deleted as char), ''), '-', coalesce(cast(loai_tb as char), ''), '-', coalesce(cast(so_tbmt as char), ''), '-', coalesce(cast(linh_vuc as char), ''), '-', coalesce(cast(services as char), ''), '-', coalesce(cast(nguon_von as char), ''), '-', coalesce(cast(phan_loai as char), ''), '-', coalesce(cast(tien_dbdt as char), ''), '-', coalesce(cast(`timestamp` as char), ''), '-', coalesce(cast(company_id as char), ''), '-', coalesce(cast(ten_khlcnt as char), ''), '-', coalesce(cast(trang_thai as char), ''), '-', coalesce(cast(gia_du_toan as char), ''), '-', coalesce(cast(ten_du_toan as char), ''), '-', coalesce(cast(ben_moi_thau as char), ''), '-', coalesce(cast(gia_goi_thau as char), ''), '-', coalesce(cast(hinh_thuc_tb as char), ''), '-', coalesce(cast(send_mail_id as char), ''), '-', coalesce(cast(ten_goi_thau as char), ''), '-', coalesce(cast(competitor_id as char), ''), '-', coalesce(cast(loai_hop_dong as char), ''), '-', coalesce(cast(score_by_name as char), ''), '-', coalesce(cast(score_service as char), ''), '-', coalesce(cast(gia_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_dbdt as char), ''), '-', coalesce(cast(hinh_thuc_lcnt as char), ''), '-', coalesce(cast(ngay_phe_duyet as char), ''), '-', coalesce(cast(score_by_scope as char), ''), '-', coalesce(cast(so_hieu_khlcnt as char), ''), '-', coalesce(cast(hieu_luc_e_hsdt as char), ''), '-', coalesce(cast(so_tbmt_version as char), ''), '-', coalesce(cast(dia_diem_mo_thau as char), ''), '-', coalesce(cast(phuong_thuc_lcnt as char), ''), '-', coalesce(cast(services_by_name as char), ''), '-', coalesce(cast(don_vi_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_du_thau as char), ''), '-', coalesce(cast(services_by_scope as char), ''), '-', coalesce(cast(dia_diem_nhan_hsdt as char), ''), '-', coalesce(cast(dia_diem_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_tu_ngay as char), ''), '-', coalesce(cast(thoi_gian_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_den_ngay as char), ''), '-', coalesce(cast(thoi_diem_dong_mo_thau as char), '')) as char)) as _airbyte_thong_tin_goi_thau_hashid,
-    tmp.*
-from __dbt__cte__thong_tin_goi_thau_ab2 tmp
--- thong_tin_goi_thau
-where 1 = 1
-)-- Final base SQL model
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab3
-select
-    id,
-    link,
-    deleted,
-    loai_tb,
-    so_tbmt,
-    linh_vuc,
-    services,
-    nguon_von,
-    phan_loai,
-    tien_dbdt,
-    `timestamp`,
-    company_id,
-    ten_khlcnt,
-    trang_thai,
-    gia_du_toan,
-    ten_du_toan,
-    ben_moi_thau,
-    gia_goi_thau,
-    hinh_thuc_tb,
-    send_mail_id,
-    ten_goi_thau,
-    competitor_id,
-    loai_hop_dong,
-    score_by_name,
-    score_service,
-    gia_trung_thau,
-    hinh_thuc_dbdt,
-    hinh_thuc_lcnt,
-    ngay_phe_duyet,
-    score_by_scope,
-    so_hieu_khlcnt,
-    hieu_luc_e_hsdt,
-    so_tbmt_version,
-    dia_diem_mo_thau,
-    phuong_thuc_lcnt,
-    services_by_name,
-    don_vi_trung_thau,
-    hinh_thuc_du_thau,
-    services_by_scope,
-    dia_diem_nhan_hsdt,
-    dia_diem_thuc_hien,
-    nhan_e_hsdt_tu_ngay,
-    thoi_gian_thuc_hien,
-    nhan_e_hsdt_den_ngay,
-    thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at,
-    _airbyte_thong_tin_goi_thau_hashid
-from __dbt__cte__thong_tin_goi_thau_ab3
--- thong_tin_goi_thau from bid._airbyte_raw_thong_tin_goi_thau
-where 1 = 1
-  )
-
-08:21:07.276131 [debug] [Thread-1  ]: mysql adapter: MySQL error: 1292 (22007): Truncated incorrect CHAR(2993) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:21:07.276872 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: ROLLBACK
-08:21:07.278118 [debug] [Thread-1  ]: finished collecting timing info
-08:21:07.278734 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: Close
-08:21:07.279820 [debug] [Thread-1  ]: Database Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)
-  1292 (22007): Truncated incorrect CHAR(2993) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-  compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:21:07.281064 [error] [Thread-1  ]: 1 of 1 ERROR creating table model bid.thong_tin_goi_thau ............................................................... [[31mERROR[0m in 0.20s]
-08:21:07.282286 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau
-08:21:07.284084 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:21:07.284411 [debug] [MainThread]: Using mysql connection "master"
-08:21:07.284661 [debug] [MainThread]: On master: BEGIN
-08:21:07.284900 [debug] [MainThread]: Opening a new connection, currently in state closed
-08:21:07.292802 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:07.293101 [debug] [MainThread]: On master: COMMIT
-08:21:07.293358 [debug] [MainThread]: Using mysql connection "master"
-08:21:07.293602 [debug] [MainThread]: On master: COMMIT
-08:21:07.294199 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:21:07.294472 [debug] [MainThread]: On master: Close
-08:21:07.295075 [info ] [MainThread]: 
-08:21:07.295537 [info ] [MainThread]: Finished running 1 table model in 0.65s.
-08:21:07.295991 [debug] [MainThread]: Connection 'master' was properly closed.
-08:21:07.296271 [debug] [MainThread]: Connection 'model.airbyte_utils.thong_tin_goi_thau' was properly closed.
-08:21:07.314730 [info ] [MainThread]: 
-08:21:07.315270 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
-08:21:07.315780 [info ] [MainThread]: 
-08:21:07.316264 [error] [MainThread]: [33mDatabase Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)[0m
-08:21:07.316710 [error] [MainThread]:   1292 (22007): Truncated incorrect CHAR(2993) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:21:07.317149 [error] [MainThread]:   compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:21:07.317660 [info ] [MainThread]: 
-08:21:07.318105 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
-
-
-============================== 2023-02-23 08:21:15.362293 | 10bf2357-a792-4cc1-afae-09ea2b1ab757 ==============================
-08:21:15.362306 [info ] [MainThread]: Running with dbt=1.1.3
-08:21:15.362870 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
-08:21:15.363118 [debug] [MainThread]: Tracking: do not track
-08:21:15.367350 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-umybrlre'
-08:21:15.368338 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
-08:21:16.956140 [debug] [MainThread]: STDOUT: "b''"
-08:21:16.956882 [debug] [MainThread]: STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
-08:21:16.958162 [debug] [MainThread]: Pulling new dependency 859fd0fa21176efee375a447937f7a46.
-08:21:16.958860 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:21:16.964606 [debug] [MainThread]: STDOUT: "b'dcc9f47e805dbe83e862628591d2451c29cee7b5\n'"
-08:21:16.965126 [debug] [MainThread]: STDERR: "b''"
-08:21:16.965461 [debug] [MainThread]:   Checking out revision 0.8.2.
-08:21:16.965727 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
-08:21:16.970616 [debug] [MainThread]: STDOUT: "b''"
-08:21:16.971175 [debug] [MainThread]: STDERR: "b''"
-08:21:16.971473 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
-08:21:18.749315 [debug] [MainThread]: STDOUT: "b''"
-08:21:18.749944 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n * [new tag]         0.0.1      -> 0.0.1\n * [new tag]         0.1.0      -> 0.1.0\n * [new tag]         0.1.1      -> 0.1.1\n * [new tag]         0.1.10     -> 0.1.10\n * [new tag]         0.1.11     -> 0.1.11\n * [new tag]         0.1.12     -> 0.1.12\n * [new tag]         0.1.13     -> 0.1.13\n * [new tag]         0.1.14     -> 0.1.14\n * [new tag]         0.1.15     -> 0.1.15\n * [new tag]         0.1.16     -> 0.1.16\n * [new tag]         0.1.17     -> 0.1.17\n * [new tag]         0.1.18     -> 0.1.18\n * [new tag]         0.1.19     -> 0.1.19\n * [new tag]         0.1.2      -> 0.1.2\n * [new tag]         0.1.20     -> 0.1.20\n * [new tag]         0.1.21     -> 0.1.21\n * [new tag]         0.1.22     -> 0.1.22\n * [new tag]         0.1.23     -> 0.1.23\n * [new tag]         0.1.24     -> 0.1.24\n * [new tag]         0.1.25     -> 0.1.25\n * [new tag]         0.1.3      -> 0.1.3\n * [new tag]         0.1.4      -> 0.1.4\n * [new tag]         0.1.5      -> 0.1.5\n * [new tag]         0.1.6      -> 0.1.6\n * [new tag]         0.1.7      -> 0.1.7\n * [new tag]         0.1.8      -> 0.1.8\n * [new tag]         0.1.9      -> 0.1.9\n * [new tag]         0.2.0      -> 0.2.0\n * [new tag]         0.2.1      -> 0.2.1\n * [new tag]         0.2.2      -> 0.2.2\n * [new tag]         0.2.3      -> 0.2.3\n * [new tag]         0.2.4      -> 0.2.4\n * [new tag]         0.2.5      -> 0.2.5\n * [new tag]         0.3.0      -> 0.3.0\n * [new tag]         0.4.0      -> 0.4.0\n * [new tag]         0.4.1      -> 0.4.1\n * [new tag]         0.5.0      -> 0.5.0\n * [new tag]         0.5.1      -> 0.5.1\n * [new tag]         0.6.0      -> 0.6.0\n * [new tag]         0.6.1      -> 0.6.1\n * [new tag]         0.6.2      -> 0.6.2\n * [new tag]         0.6.3      -> 0.6.3\n * [new tag]         0.6.4      -> 0.6.4\n * [new tag]         0.6.5      -> 0.6.5\n * [new tag]         0.6.6      -> 0.6.6\n * [new tag]         0.7.0      -> 0.7.0\n * [new tag]         0.7.1      -> 0.7.1\n * [new tag]         0.7.2      -> 0.7.2\n * [new tag]         0.7.3      -> 0.7.3\n * [new tag]         0.7.4      -> 0.7.4\n * [new tag]         0.7.4-b1   -> 0.7.4-b1\n * [new tag]         0.7.4b1    -> 0.7.4b1\n * [new tag]         0.7.5      -> 0.7.5\n * [new tag]         0.7.6      -> 0.7.6\n * [new tag]         0.8.0      -> 0.8.0\n * [new tag]         0.8.1      -> 0.8.1\n * [new tag]         0.8.2      -> 0.8.2\n * [new tag]         0.8.3      -> 0.8.3\n * [new tag]         0.8.4      -> 0.8.4\n * [new tag]         0.8.5      -> 0.8.5\n * [new tag]         0.8.6      -> 0.8.6\n * [new tag]         0.9.0      -> 0.9.0\n * [new tag]         0.9.1      -> 0.9.1\n * [new tag]         0.9.2      -> 0.9.2\n * [new tag]         0.9.5      -> 0.9.5\n * [new tag]         0.9.6      -> 0.9.6\n * [new tag]         1.0.0      -> 1.0.0\n * [new tag]         1.0.0-b1   -> 1.0.0-b1\n * [new tag]         1.0.0-b2   -> 1.0.0-b2\n * [new tag]         1.0.0-rc1  -> 1.0.0-rc1\n'"
-08:21:18.750332 [debug] [MainThread]: Executing "git tag --list"
-08:21:18.755745 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
-08:21:18.756274 [debug] [MainThread]: STDERR: "b''"
-08:21:18.756552 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
-08:21:18.775233 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
-08:21:18.775772 [debug] [MainThread]: STDERR: "b''"
-08:21:18.776101 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:21:18.779719 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:21:18.780232 [debug] [MainThread]: STDERR: "b''"
-08:21:18.780510 [debug] [MainThread]:   Checked out at 5717b10.
-08:21:18.790866 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
-08:21:18.794390 [debug] [MainThread]: STDOUT: "b''"
-08:21:18.794845 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
-08:21:18.795164 [debug] [MainThread]: command return code=128
-08:21:18.797010 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
-08:21:18.797285 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:21:18.800889 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:21:18.801352 [debug] [MainThread]: STDERR: "b''"
-08:21:18.801623 [debug] [MainThread]:   Checking out revision 0.8.2.
-08:21:18.801882 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
-08:21:18.808176 [debug] [MainThread]: STDOUT: "b''"
-08:21:18.808659 [debug] [MainThread]: STDERR: "b''"
-08:21:18.808920 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
-08:21:20.336990 [debug] [MainThread]: STDOUT: "b''"
-08:21:20.337656 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
-08:21:20.338003 [debug] [MainThread]: Executing "git tag --list"
-08:21:20.343018 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
-08:21:20.343501 [debug] [MainThread]: STDERR: "b''"
-08:21:20.343794 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
-08:21:20.356069 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
-08:21:20.356887 [debug] [MainThread]: STDERR: "b''"
-08:21:20.357255 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:21:20.361179 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:21:20.361655 [debug] [MainThread]: STDERR: "b''"
-08:21:20.361940 [debug] [MainThread]: Already at 5717b10, nothing to do.
-08:21:20.372905 [info ] [MainThread]: Installing https://github.com/fishtown-analytics/dbt-utils.git
-08:21:20.385216 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
-08:21:20.390506 [debug] [MainThread]: STDOUT: "b''"
-08:21:20.391046 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
-08:21:20.391305 [debug] [MainThread]: command return code=128
-08:21:20.404531 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
-08:21:20.404913 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:21:20.409709 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:21:20.410328 [debug] [MainThread]: STDERR: "b''"
-08:21:20.410608 [debug] [MainThread]:   Checking out revision 0.8.2.
-08:21:20.410870 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
-08:21:20.416537 [debug] [MainThread]: STDOUT: "b''"
-08:21:20.417156 [debug] [MainThread]: STDERR: "b''"
-08:21:20.417428 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
-08:21:21.871282 [debug] [MainThread]: STDOUT: "b''"
-08:21:21.871907 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
-08:21:21.872363 [debug] [MainThread]: Executing "git tag --list"
-08:21:21.877691 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n0.9.0\n0.9.1\n0.9.2\n0.9.5\n0.9.6\n1.0.0\n1.0.0-b1\n1.0.0-b2\n1.0.0-rc1\n'"
-08:21:21.878249 [debug] [MainThread]: STDERR: "b''"
-08:21:21.878607 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
-08:21:21.885366 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
-08:21:21.885886 [debug] [MainThread]: STDERR: "b''"
-08:21:21.886222 [debug] [MainThread]: Executing "git rev-parse HEAD"
-08:21:21.889821 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
-08:21:21.890458 [debug] [MainThread]: STDERR: "b''"
-08:21:21.890811 [debug] [MainThread]: Already at 5717b10, nothing to do.
-08:21:21.891207 [info ] [MainThread]:   Installed from revision 0.8.2
-
-
-============================== 2023-02-23 08:21:33.070023 | fe4dec57-07e7-4a82-8d00-dc6348f76b38 ==============================
-08:21:33.070046 [info ] [MainThread]: Running with dbt=1.1.3
-08:21:33.070855 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
-08:21:33.071150 [debug] [MainThread]: Tracking: do not track
-08:21:33.204343 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
-08:21:33.204712 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
-08:21:33.205334 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
-There are 2 unused configuration paths:
-- models.airbyte_utils.generated.airbyte_incremental
-- models.airbyte_utils.generated.airbyte_views
-
-08:21:33.232282 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 593 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
-08:21:33.234547 [info ] [MainThread]: 
-08:21:33.235372 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:21:33.236660 [debug] [ThreadPool]: Acquiring new mysql connection "list_schemas"
-08:21:33.263456 [debug] [ThreadPool]: Using mysql connection "list_schemas"
-08:21:33.263829 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_schemas"} */
-select distinct schema_name
-        from information_schema.schemata
-08:21:33.264130 [debug] [ThreadPool]: Opening a new connection, currently in state init
-08:21:33.275201 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.01 seconds
-08:21:33.277334 [debug] [ThreadPool]: On list_schemas: Close
-08:21:33.279867 [debug] [ThreadPool]: Acquiring new mysql connection "list_None_bid"
-08:21:33.289596 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:21:33.289989 [debug] [ThreadPool]: On list_None_bid: BEGIN
-08:21:33.290261 [debug] [ThreadPool]: Opening a new connection, currently in state closed
-08:21:33.296083 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:33.296403 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:21:33.296648 [debug] [ThreadPool]: On list_None_bid: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_None_bid"} */
-select
-      null as "database",
-      table_name as name,
-      table_schema as "schema",
-      case when table_type = 'BASE TABLE' then 'table'
-           when table_type = 'VIEW' then 'view'
-           else table_type
-      end as table_type
-    from information_schema.tables
-    where table_schema = 'bid'
-  
-08:21:33.298369 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
-08:21:33.300132 [debug] [ThreadPool]: On list_None_bid: ROLLBACK
-08:21:33.300609 [debug] [ThreadPool]: On list_None_bid: Close
-08:21:33.301615 [debug] [MainThread]: Using mysql connection "master"
-08:21:33.301883 [debug] [MainThread]: On master: BEGIN
-08:21:33.302133 [debug] [MainThread]: Opening a new connection, currently in state init
-08:21:33.309924 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:33.310202 [debug] [MainThread]: On master: COMMIT
-08:21:33.310455 [debug] [MainThread]: Using mysql connection "master"
-08:21:33.310707 [debug] [MainThread]: On master: COMMIT
-08:21:33.311280 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:21:33.311553 [debug] [MainThread]: On master: Close
-08:21:33.312197 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
-08:21:33.312685 [info ] [MainThread]: 
-08:21:33.316921 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:33.317677 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:21:33.317970 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:33.318333 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:33.402545 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:21:33.403203 [debug] [Thread-1  ]: finished collecting timing info
-08:21:33.403961 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:33.405313 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:33.405963 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:21:33.406233 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:33.406491 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:33.531404 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:21:33.531936 [debug] [Thread-1  ]: finished collecting timing info
-08:21:33.532682 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:33.533620 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:33.534114 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:21:33.534374 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:33.534624 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:33.655724 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:21:33.656393 [debug] [Thread-1  ]: finished collecting timing info
-08:21:33.657165 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:33.658778 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau
-08:21:33.659184 [info ] [Thread-1  ]: 1 of 1 START table model bid.thong_tin_goi_thau ........................................................................ [RUN]
-08:21:33.659908 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:33.660200 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau
-08:21:33.660461 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau
-08:21:33.686563 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:21:33.687147 [debug] [Thread-1  ]: finished collecting timing info
-08:21:33.687433 [debug] [Thread-1  ]: Began executing node model.airbyte_utils.thong_tin_goi_thau
-08:21:33.735610 [debug] [Thread-1  ]: Writing runtime SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:21:33.736368 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:33.736832 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: BEGIN
-08:21:33.737083 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
-08:21:33.744219 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:33.744504 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:33.744749 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
-
-
-  create  table
-    bid.`thong_tin_goi_thau__dbt_tmp`
-  as (
-    
-with __dbt__cte__thong_tin_goi_thau_ab1 as (
-
--- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
--- depends_on: bid._airbyte_raw_thong_tin_goi_thau
-select
-    json_value(_airbyte_data, 
-    '$."id"' RETURNING CHAR) as id,
-    json_value(_airbyte_data, 
-    '$."link"' RETURNING CHAR) as link,
-    json_value(_airbyte_data, 
-    '$."deleted"' RETURNING CHAR) as deleted,
-    json_value(_airbyte_data, 
-    '$."loai_tb"' RETURNING CHAR) as loai_tb,
-    json_value(_airbyte_data, 
-    '$."so_tbmt"' RETURNING CHAR) as so_tbmt,
-    json_value(_airbyte_data, 
-    '$."linh_vuc"' RETURNING CHAR) as linh_vuc,
-    json_value(_airbyte_data, 
-    '$."services"' RETURNING CHAR) as services,
-    json_value(_airbyte_data, 
-    '$."nguon_von"' RETURNING CHAR) as nguon_von,
-    json_value(_airbyte_data, 
-    '$."phan_loai"' RETURNING CHAR) as phan_loai,
-    json_value(_airbyte_data, 
-    '$."tien_dbdt"' RETURNING CHAR) as tien_dbdt,
-    json_value(_airbyte_data, 
-    '$."timestamp"' RETURNING CHAR) as `timestamp`,
-    json_value(_airbyte_data, 
-    '$."company_id"' RETURNING CHAR) as company_id,
-    json_value(_airbyte_data, 
-    '$."ten_khlcnt"' RETURNING CHAR) as ten_khlcnt,
-    json_value(_airbyte_data, 
-    '$."trang_thai"' RETURNING CHAR) as trang_thai,
-    json_value(_airbyte_data, 
-    '$."gia_du_toan"' RETURNING CHAR) as gia_du_toan,
-    json_value(_airbyte_data, 
-    '$."ten_du_toan"' RETURNING CHAR) as ten_du_toan,
-    json_value(_airbyte_data, 
-    '$."ben_moi_thau"' RETURNING CHAR) as ben_moi_thau,
-    json_value(_airbyte_data, 
-    '$."gia_goi_thau"' RETURNING CHAR) as gia_goi_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_tb"' RETURNING CHAR) as hinh_thuc_tb,
-    json_value(_airbyte_data, 
-    '$."send_mail_id"' RETURNING CHAR) as send_mail_id,
-    json_value(_airbyte_data, 
-    '$."ten_goi_thau"' RETURNING CHAR) as ten_goi_thau,
-    json_value(_airbyte_data, 
-    '$."competitor_id"' RETURNING CHAR) as competitor_id,
-    json_value(_airbyte_data, 
-    '$."loai_hop_dong"' RETURNING CHAR) as loai_hop_dong,
-    json_value(_airbyte_data, 
-    '$."score_by_name"' RETURNING CHAR) as score_by_name,
-    json_value(_airbyte_data, 
-    '$."score_service"' RETURNING CHAR) as score_service,
-    json_value(_airbyte_data, 
-    '$."gia_trung_thau"' RETURNING CHAR) as gia_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_dbdt"' RETURNING CHAR) as hinh_thuc_dbdt,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_lcnt"' RETURNING CHAR) as hinh_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."ngay_phe_duyet"' RETURNING CHAR) as ngay_phe_duyet,
-    json_value(_airbyte_data, 
-    '$."score_by_scope"' RETURNING CHAR) as score_by_scope,
-    json_value(_airbyte_data, 
-    '$."so_hieu_khlcnt"' RETURNING CHAR) as so_hieu_khlcnt,
-    json_value(_airbyte_data, 
-    '$."hieu_luc_e_hsdt"' RETURNING CHAR) as hieu_luc_e_hsdt,
-    json_value(_airbyte_data, 
-    '$."so_tbmt_version"' RETURNING CHAR) as so_tbmt_version,
-    json_value(_airbyte_data, 
-    '$."dia_diem_mo_thau"' RETURNING CHAR) as dia_diem_mo_thau,
-    json_value(_airbyte_data, 
-    '$."phuong_thuc_lcnt"' RETURNING CHAR) as phuong_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."services_by_name"' RETURNING CHAR) as services_by_name,
-    json_value(_airbyte_data, 
-    '$."don_vi_trung_thau"' RETURNING CHAR) as don_vi_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_du_thau"' RETURNING CHAR) as hinh_thuc_du_thau,
-    json_value(_airbyte_data, 
-    '$."services_by_scope"' RETURNING CHAR) as services_by_scope,
-    json_value(_airbyte_data, 
-    '$."dia_diem_nhan_hsdt"' RETURNING CHAR) as dia_diem_nhan_hsdt,
-    json_value(_airbyte_data, 
-    '$."dia_diem_thuc_hien"' RETURNING CHAR) as dia_diem_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_tu_ngay"' RETURNING CHAR) as nhan_e_hsdt_tu_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_gian_thuc_hien"' RETURNING CHAR) as thoi_gian_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_den_ngay"' RETURNING CHAR) as nhan_e_hsdt_den_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_diem_dong_mo_thau"' RETURNING CHAR) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from bid._airbyte_raw_thong_tin_goi_thau as table_alias
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab2 as (
-
--- SQL model to cast each column to its adequate SQL type converted from the JSON schema type
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab1
-select
-    cast(id as 
-    signed
-) as id,
-    cast(link as char(2048)) as link,
-    cast(deleted as 
-    signed
-) as deleted,
-    cast(loai_tb as char(2048)) as loai_tb,
-    cast(so_tbmt as char(2048)) as so_tbmt,
-    cast(linh_vuc as char(2048)) as linh_vuc,
-    cast(services as char(2048)) as services,
-    cast(nguon_von as char(2048)) as nguon_von,
-    cast(phan_loai as char(2048)) as phan_loai,
-    cast(tien_dbdt as char(2048)) as tien_dbdt,
-    cast(`timestamp` as char(2048)) as `timestamp`,
-    cast(company_id as char(2048)) as company_id,
-    cast(ten_khlcnt as char(2048)) as ten_khlcnt,
-    cast(trang_thai as 
-    signed
-) as trang_thai,
-    cast(gia_du_toan as char(2048)) as gia_du_toan,
-    cast(ten_du_toan as char(2048)) as ten_du_toan,
-    cast(ben_moi_thau as char(2048)) as ben_moi_thau,
-    cast(gia_goi_thau as char(2048)) as gia_goi_thau,
-    cast(hinh_thuc_tb as char(2048)) as hinh_thuc_tb,
-    cast(send_mail_id as char(2048)) as send_mail_id,
-    cast(ten_goi_thau as char(2048)) as ten_goi_thau,
-    cast(competitor_id as char(2048)) as competitor_id,
-    cast(loai_hop_dong as char(2048)) as loai_hop_dong,
-    cast(score_by_name as 
-    float
-) as score_by_name,
-    cast(score_service as 
-    float
-) as score_service,
-    cast(gia_trung_thau as char(2048)) as gia_trung_thau,
-    cast(hinh_thuc_dbdt as char(2048)) as hinh_thuc_dbdt,
-    cast(hinh_thuc_lcnt as char(2048)) as hinh_thuc_lcnt,
-    cast(ngay_phe_duyet as char(2048)) as ngay_phe_duyet,
-    cast(score_by_scope as 
-    float
-) as score_by_scope,
-    cast(so_hieu_khlcnt as char(2048)) as so_hieu_khlcnt,
-    cast(hieu_luc_e_hsdt as char(2048)) as hieu_luc_e_hsdt,
-    cast(so_tbmt_version as char(2048)) as so_tbmt_version,
-    cast(dia_diem_mo_thau as char(2048)) as dia_diem_mo_thau,
-    cast(phuong_thuc_lcnt as char(2048)) as phuong_thuc_lcnt,
-    cast(services_by_name as char(2048)) as services_by_name,
-    cast(don_vi_trung_thau as char(2048)) as don_vi_trung_thau,
-    cast(hinh_thuc_du_thau as char(2048)) as hinh_thuc_du_thau,
-    cast(services_by_scope as char(2048)) as services_by_scope,
-    cast(dia_diem_nhan_hsdt as char(2048)) as dia_diem_nhan_hsdt,
-    cast(dia_diem_thuc_hien as char(2048)) as dia_diem_thuc_hien,
-    cast(nhan_e_hsdt_tu_ngay as char(2048)) as nhan_e_hsdt_tu_ngay,
-    cast(thoi_gian_thuc_hien as char(2048)) as thoi_gian_thuc_hien,
-    cast(nhan_e_hsdt_den_ngay as char(2048)) as nhan_e_hsdt_den_ngay,
-    cast(thoi_diem_dong_mo_thau as char(2048)) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from __dbt__cte__thong_tin_goi_thau_ab1
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab3 as (
-
--- SQL model to build a hash column based on the values of this record
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab2
-select
-    md5(cast(concat(coalesce(cast(id as char), ''), '-', coalesce(cast(link as char), ''), '-', coalesce(cast(deleted as char), ''), '-', coalesce(cast(loai_tb as char), ''), '-', coalesce(cast(so_tbmt as char), ''), '-', coalesce(cast(linh_vuc as char), ''), '-', coalesce(cast(services as char), ''), '-', coalesce(cast(nguon_von as char), ''), '-', coalesce(cast(phan_loai as char), ''), '-', coalesce(cast(tien_dbdt as char), ''), '-', coalesce(cast(`timestamp` as char), ''), '-', coalesce(cast(company_id as char), ''), '-', coalesce(cast(ten_khlcnt as char), ''), '-', coalesce(cast(trang_thai as char), ''), '-', coalesce(cast(gia_du_toan as char), ''), '-', coalesce(cast(ten_du_toan as char), ''), '-', coalesce(cast(ben_moi_thau as char), ''), '-', coalesce(cast(gia_goi_thau as char), ''), '-', coalesce(cast(hinh_thuc_tb as char), ''), '-', coalesce(cast(send_mail_id as char), ''), '-', coalesce(cast(ten_goi_thau as char), ''), '-', coalesce(cast(competitor_id as char), ''), '-', coalesce(cast(loai_hop_dong as char), ''), '-', coalesce(cast(score_by_name as char), ''), '-', coalesce(cast(score_service as char), ''), '-', coalesce(cast(gia_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_dbdt as char), ''), '-', coalesce(cast(hinh_thuc_lcnt as char), ''), '-', coalesce(cast(ngay_phe_duyet as char), ''), '-', coalesce(cast(score_by_scope as char), ''), '-', coalesce(cast(so_hieu_khlcnt as char), ''), '-', coalesce(cast(hieu_luc_e_hsdt as char), ''), '-', coalesce(cast(so_tbmt_version as char), ''), '-', coalesce(cast(dia_diem_mo_thau as char), ''), '-', coalesce(cast(phuong_thuc_lcnt as char), ''), '-', coalesce(cast(services_by_name as char), ''), '-', coalesce(cast(don_vi_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_du_thau as char), ''), '-', coalesce(cast(services_by_scope as char), ''), '-', coalesce(cast(dia_diem_nhan_hsdt as char), ''), '-', coalesce(cast(dia_diem_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_tu_ngay as char), ''), '-', coalesce(cast(thoi_gian_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_den_ngay as char), ''), '-', coalesce(cast(thoi_diem_dong_mo_thau as char), '')) as char)) as _airbyte_thong_tin_goi_thau_hashid,
-    tmp.*
-from __dbt__cte__thong_tin_goi_thau_ab2 tmp
--- thong_tin_goi_thau
-where 1 = 1
-)-- Final base SQL model
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab3
-select
-    id,
-    link,
-    deleted,
-    loai_tb,
-    so_tbmt,
-    linh_vuc,
-    services,
-    nguon_von,
-    phan_loai,
-    tien_dbdt,
-    `timestamp`,
-    company_id,
-    ten_khlcnt,
-    trang_thai,
-    gia_du_toan,
-    ten_du_toan,
-    ben_moi_thau,
-    gia_goi_thau,
-    hinh_thuc_tb,
-    send_mail_id,
-    ten_goi_thau,
-    competitor_id,
-    loai_hop_dong,
-    score_by_name,
-    score_service,
-    gia_trung_thau,
-    hinh_thuc_dbdt,
-    hinh_thuc_lcnt,
-    ngay_phe_duyet,
-    score_by_scope,
-    so_hieu_khlcnt,
-    hieu_luc_e_hsdt,
-    so_tbmt_version,
-    dia_diem_mo_thau,
-    phuong_thuc_lcnt,
-    services_by_name,
-    don_vi_trung_thau,
-    hinh_thuc_du_thau,
-    services_by_scope,
-    dia_diem_nhan_hsdt,
-    dia_diem_thuc_hien,
-    nhan_e_hsdt_tu_ngay,
-    thoi_gian_thuc_hien,
-    nhan_e_hsdt_den_ngay,
-    thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at,
-    _airbyte_thong_tin_goi_thau_hashid
-from __dbt__cte__thong_tin_goi_thau_ab3
--- thong_tin_goi_thau from bid._airbyte_raw_thong_tin_goi_thau
-where 1 = 1
-  )
-
-08:21:33.852932 [debug] [Thread-1  ]: mysql adapter: MySQL error: 1292 (22007): Truncated incorrect CHAR(2993) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:21:33.853658 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: ROLLBACK
-08:21:33.854667 [debug] [Thread-1  ]: finished collecting timing info
-08:21:33.855181 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: Close
-08:21:33.856218 [debug] [Thread-1  ]: Database Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)
-  1292 (22007): Truncated incorrect CHAR(2993) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-  compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:21:33.857088 [error] [Thread-1  ]: 1 of 1 ERROR creating table model bid.thong_tin_goi_thau ............................................................... [[31mERROR[0m in 0.20s]
-08:21:33.857967 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau
-08:21:33.860474 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:21:33.861036 [debug] [MainThread]: Using mysql connection "master"
-08:21:33.861446 [debug] [MainThread]: On master: BEGIN
-08:21:33.861920 [debug] [MainThread]: Opening a new connection, currently in state closed
-08:21:33.867611 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:33.867899 [debug] [MainThread]: On master: COMMIT
-08:21:33.868176 [debug] [MainThread]: Using mysql connection "master"
-08:21:33.868451 [debug] [MainThread]: On master: COMMIT
-08:21:33.869060 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:21:33.869346 [debug] [MainThread]: On master: Close
-08:21:33.869961 [info ] [MainThread]: 
-08:21:33.870433 [info ] [MainThread]: Finished running 1 table model in 0.63s.
-08:21:33.870891 [debug] [MainThread]: Connection 'master' was properly closed.
-08:21:33.871133 [debug] [MainThread]: Connection 'model.airbyte_utils.thong_tin_goi_thau' was properly closed.
-08:21:33.888140 [info ] [MainThread]: 
-08:21:33.888717 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
-08:21:33.889269 [info ] [MainThread]: 
-08:21:33.889709 [error] [MainThread]: [33mDatabase Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)[0m
-08:21:33.890139 [error] [MainThread]:   1292 (22007): Truncated incorrect CHAR(2993) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:21:33.890590 [error] [MainThread]:   compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:21:33.891102 [info ] [MainThread]: 
-08:21:33.891546 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
-
-
-============================== 2023-02-23 08:21:56.564378 | 905c3f46-9e92-49bc-a7a4-9bd662855354 ==============================
-08:21:56.564400 [info ] [MainThread]: Running with dbt=1.1.3
-08:21:56.565255 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
-08:21:56.565543 [debug] [MainThread]: Tracking: do not track
-08:21:56.700877 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
-08:21:56.701514 [debug] [MainThread]: Partial parsing: updated file: airbyte_utils://models/generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:21:56.726380 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:21:56.788312 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:21:56.800716 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
-There are 2 unused configuration paths:
-- models.airbyte_utils.generated.airbyte_views
-- models.airbyte_utils.generated.airbyte_incremental
-
-08:21:56.826854 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 593 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
-08:21:56.829156 [info ] [MainThread]: 
-08:21:56.830017 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:21:56.831163 [debug] [ThreadPool]: Acquiring new mysql connection "list_schemas"
-08:21:56.852638 [debug] [ThreadPool]: Using mysql connection "list_schemas"
-08:21:56.853323 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_schemas"} */
-select distinct schema_name
-        from information_schema.schemata
-08:21:56.853590 [debug] [ThreadPool]: Opening a new connection, currently in state init
-08:21:56.864545 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.01 seconds
-08:21:56.868739 [debug] [ThreadPool]: On list_schemas: Close
-08:21:56.871006 [debug] [ThreadPool]: Acquiring new mysql connection "list_None_bid"
-08:21:56.886172 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:21:56.886596 [debug] [ThreadPool]: On list_None_bid: BEGIN
-08:21:56.886846 [debug] [ThreadPool]: Opening a new connection, currently in state closed
-08:21:56.892951 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:56.893235 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:21:56.893503 [debug] [ThreadPool]: On list_None_bid: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_None_bid"} */
-select
-      null as "database",
-      table_name as name,
-      table_schema as "schema",
-      case when table_type = 'BASE TABLE' then 'table'
-           when table_type = 'VIEW' then 'view'
-           else table_type
-      end as table_type
-    from information_schema.tables
-    where table_schema = 'bid'
-  
-08:21:56.895216 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
-08:21:56.896903 [debug] [ThreadPool]: On list_None_bid: ROLLBACK
-08:21:56.897358 [debug] [ThreadPool]: On list_None_bid: Close
-08:21:56.898363 [debug] [MainThread]: Using mysql connection "master"
-08:21:56.898647 [debug] [MainThread]: On master: BEGIN
-08:21:56.898889 [debug] [MainThread]: Opening a new connection, currently in state init
-08:21:56.904197 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:56.904487 [debug] [MainThread]: On master: COMMIT
-08:21:56.904745 [debug] [MainThread]: Using mysql connection "master"
-08:21:56.904989 [debug] [MainThread]: On master: COMMIT
-08:21:56.905584 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:21:56.905860 [debug] [MainThread]: On master: Close
-08:21:56.906812 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
-08:21:56.907302 [info ] [MainThread]: 
-08:21:56.911914 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:56.912548 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:21:56.912843 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:56.913124 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:56.987443 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:21:56.988128 [debug] [Thread-1  ]: finished collecting timing info
-08:21:56.988952 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:21:56.989874 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:56.990427 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:21:56.991000 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:56.991265 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:57.101544 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:21:57.102205 [debug] [Thread-1  ]: finished collecting timing info
-08:21:57.103012 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:21:57.103797 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:57.104461 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:21:57.104987 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:57.105243 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:57.224431 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:21:57.224881 [debug] [Thread-1  ]: finished collecting timing info
-08:21:57.225519 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:21:57.226514 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau
-08:21:57.226876 [info ] [Thread-1  ]: 1 of 1 START table model bid.thong_tin_goi_thau ........................................................................ [RUN]
-08:21:57.227590 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:57.227838 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau
-08:21:57.228099 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau
-08:21:57.253407 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:21:57.253970 [debug] [Thread-1  ]: finished collecting timing info
-08:21:57.254249 [debug] [Thread-1  ]: Began executing node model.airbyte_utils.thong_tin_goi_thau
-08:21:57.300322 [debug] [Thread-1  ]: Writing runtime SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:21:57.301020 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:57.301262 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: BEGIN
-08:21:57.301542 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
-08:21:57.307531 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:57.307805 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:21:57.308081 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
-
-
-  create  table
-    bid.`thong_tin_goi_thau__dbt_tmp`
-  as (
-    
-with __dbt__cte__thong_tin_goi_thau_ab1 as (
-
--- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
--- depends_on: bid._airbyte_raw_thong_tin_goi_thau
-select
-    json_value(_airbyte_data, 
-    '$."id"' RETURNING CHAR) as id,
-    json_value(_airbyte_data, 
-    '$."link"' RETURNING CHAR) as link,
-    json_value(_airbyte_data, 
-    '$."deleted"' RETURNING CHAR) as deleted,
-    json_value(_airbyte_data, 
-    '$."loai_tb"' RETURNING CHAR) as loai_tb,
-    json_value(_airbyte_data, 
-    '$."so_tbmt"' RETURNING CHAR) as so_tbmt,
-    json_value(_airbyte_data, 
-    '$."linh_vuc"' RETURNING CHAR) as linh_vuc,
-    json_value(_airbyte_data, 
-    '$."services"' RETURNING CHAR) as services,
-    json_value(_airbyte_data, 
-    '$."nguon_von"' RETURNING CHAR) as nguon_von,
-    json_value(_airbyte_data, 
-    '$."phan_loai"' RETURNING CHAR) as phan_loai,
-    json_value(_airbyte_data, 
-    '$."tien_dbdt"' RETURNING CHAR) as tien_dbdt,
-    json_value(_airbyte_data, 
-    '$."timestamp"' RETURNING CHAR) as `timestamp`,
-    json_value(_airbyte_data, 
-    '$."company_id"' RETURNING CHAR) as company_id,
-    json_value(_airbyte_data, 
-    '$."ten_khlcnt"' RETURNING CHAR) as ten_khlcnt,
-    json_value(_airbyte_data, 
-    '$."trang_thai"' RETURNING CHAR) as trang_thai,
-    json_value(_airbyte_data, 
-    '$."gia_du_toan"' RETURNING CHAR) as gia_du_toan,
-    json_value(_airbyte_data, 
-    '$."ten_du_toan"' RETURNING CHAR) as ten_du_toan,
-    json_value(_airbyte_data, 
-    '$."ben_moi_thau"' RETURNING CHAR) as ben_moi_thau,
-    json_value(_airbyte_data, 
-    '$."gia_goi_thau"' RETURNING CHAR) as gia_goi_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_tb"' RETURNING CHAR) as hinh_thuc_tb,
-    json_value(_airbyte_data, 
-    '$."send_mail_id"' RETURNING CHAR) as send_mail_id,
-    json_value(_airbyte_data, 
-    '$."ten_goi_thau"' RETURNING CHAR) as ten_goi_thau,
-    json_value(_airbyte_data, 
-    '$."competitor_id"' RETURNING CHAR) as competitor_id,
-    json_value(_airbyte_data, 
-    '$."loai_hop_dong"' RETURNING CHAR) as loai_hop_dong,
-    json_value(_airbyte_data, 
-    '$."score_by_name"' RETURNING CHAR) as score_by_name,
-    json_value(_airbyte_data, 
-    '$."score_service"' RETURNING CHAR) as score_service,
-    json_value(_airbyte_data, 
-    '$."gia_trung_thau"' RETURNING CHAR) as gia_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_dbdt"' RETURNING CHAR) as hinh_thuc_dbdt,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_lcnt"' RETURNING CHAR) as hinh_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."ngay_phe_duyet"' RETURNING CHAR) as ngay_phe_duyet,
-    json_value(_airbyte_data, 
-    '$."score_by_scope"' RETURNING CHAR) as score_by_scope,
-    json_value(_airbyte_data, 
-    '$."so_hieu_khlcnt"' RETURNING CHAR) as so_hieu_khlcnt,
-    json_value(_airbyte_data, 
-    '$."hieu_luc_e_hsdt"' RETURNING CHAR) as hieu_luc_e_hsdt,
-    json_value(_airbyte_data, 
-    '$."so_tbmt_version"' RETURNING CHAR) as so_tbmt_version,
-    json_value(_airbyte_data, 
-    '$."dia_diem_mo_thau"' RETURNING CHAR) as dia_diem_mo_thau,
-    json_value(_airbyte_data, 
-    '$."phuong_thuc_lcnt"' RETURNING CHAR) as phuong_thuc_lcnt,
-    json_value(_airbyte_data, 
-    '$."services_by_name"' RETURNING CHAR) as services_by_name,
-    json_value(_airbyte_data, 
-    '$."don_vi_trung_thau"' RETURNING CHAR) as don_vi_trung_thau,
-    json_value(_airbyte_data, 
-    '$."hinh_thuc_du_thau"' RETURNING CHAR) as hinh_thuc_du_thau,
-    json_value(_airbyte_data, 
-    '$."services_by_scope"' RETURNING CHAR) as services_by_scope,
-    json_value(_airbyte_data, 
-    '$."dia_diem_nhan_hsdt"' RETURNING CHAR) as dia_diem_nhan_hsdt,
-    json_value(_airbyte_data, 
-    '$."dia_diem_thuc_hien"' RETURNING CHAR) as dia_diem_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_tu_ngay"' RETURNING CHAR) as nhan_e_hsdt_tu_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_gian_thuc_hien"' RETURNING CHAR) as thoi_gian_thuc_hien,
-    json_value(_airbyte_data, 
-    '$."nhan_e_hsdt_den_ngay"' RETURNING CHAR) as nhan_e_hsdt_den_ngay,
-    json_value(_airbyte_data, 
-    '$."thoi_diem_dong_mo_thau"' RETURNING CHAR) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from bid._airbyte_raw_thong_tin_goi_thau as table_alias
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab2 as (
-
--- SQL model to cast each column to its adequate SQL type converted from the JSON schema type
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab1
-select
-    cast(id as 
-    signed
-) as id,
-    cast(link as char(4094)) as link,
-    cast(deleted as 
-    signed
-) as deleted,
-    cast(loai_tb as char(4094)) as loai_tb,
-    cast(so_tbmt as char(4094)) as so_tbmt,
-    cast(linh_vuc as char(4094)) as linh_vuc,
-    cast(services as char(4094)) as services,
-    cast(nguon_von as char(4094)) as nguon_von,
-    cast(phan_loai as char(4094)) as phan_loai,
-    cast(tien_dbdt as char(4094)) as tien_dbdt,
-    cast(`timestamp` as char(4094)) as `timestamp`,
-    cast(company_id as char(4094)) as company_id,
-    cast(ten_khlcnt as char(4094)) as ten_khlcnt,
-    cast(trang_thai as 
-    signed
-) as trang_thai,
-    cast(gia_du_toan as char(4094)) as gia_du_toan,
-    cast(ten_du_toan as char(4094)) as ten_du_toan,
-    cast(ben_moi_thau as char(4094)) as ben_moi_thau,
-    cast(gia_goi_thau as char(4094)) as gia_goi_thau,
-    cast(hinh_thuc_tb as char(4094)) as hinh_thuc_tb,
-    cast(send_mail_id as char(4094)) as send_mail_id,
-    cast(ten_goi_thau as char(4094)) as ten_goi_thau,
-    cast(competitor_id as char(4094)) as competitor_id,
-    cast(loai_hop_dong as char(4094)) as loai_hop_dong,
-    cast(score_by_name as 
-    float
-) as score_by_name,
-    cast(score_service as 
-    float
-) as score_service,
-    cast(gia_trung_thau as char(4094)) as gia_trung_thau,
-    cast(hinh_thuc_dbdt as char(4094)) as hinh_thuc_dbdt,
-    cast(hinh_thuc_lcnt as char(4094)) as hinh_thuc_lcnt,
-    cast(ngay_phe_duyet as char(4094)) as ngay_phe_duyet,
-    cast(score_by_scope as 
-    float
-) as score_by_scope,
-    cast(so_hieu_khlcnt as char(4094)) as so_hieu_khlcnt,
-    cast(hieu_luc_e_hsdt as char(4094)) as hieu_luc_e_hsdt,
-    cast(so_tbmt_version as char(4094)) as so_tbmt_version,
-    cast(dia_diem_mo_thau as char(4094)) as dia_diem_mo_thau,
-    cast(phuong_thuc_lcnt as char(4094)) as phuong_thuc_lcnt,
-    cast(services_by_name as char(4094)) as services_by_name,
-    cast(don_vi_trung_thau as char(4094)) as don_vi_trung_thau,
-    cast(hinh_thuc_du_thau as char(4094)) as hinh_thuc_du_thau,
-    cast(services_by_scope as char(4094)) as services_by_scope,
-    cast(dia_diem_nhan_hsdt as char(4094)) as dia_diem_nhan_hsdt,
-    cast(dia_diem_thuc_hien as char(4094)) as dia_diem_thuc_hien,
-    cast(nhan_e_hsdt_tu_ngay as char(4094)) as nhan_e_hsdt_tu_ngay,
-    cast(thoi_gian_thuc_hien as char(4094)) as thoi_gian_thuc_hien,
-    cast(nhan_e_hsdt_den_ngay as char(4094)) as nhan_e_hsdt_den_ngay,
-    cast(thoi_diem_dong_mo_thau as char(4094)) as thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at
-from __dbt__cte__thong_tin_goi_thau_ab1
--- thong_tin_goi_thau
-where 1 = 1
-),  __dbt__cte__thong_tin_goi_thau_ab3 as (
-
--- SQL model to build a hash column based on the values of this record
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab2
-select
-    md5(cast(concat(coalesce(cast(id as char), ''), '-', coalesce(cast(link as char), ''), '-', coalesce(cast(deleted as char), ''), '-', coalesce(cast(loai_tb as char), ''), '-', coalesce(cast(so_tbmt as char), ''), '-', coalesce(cast(linh_vuc as char), ''), '-', coalesce(cast(services as char), ''), '-', coalesce(cast(nguon_von as char), ''), '-', coalesce(cast(phan_loai as char), ''), '-', coalesce(cast(tien_dbdt as char), ''), '-', coalesce(cast(`timestamp` as char), ''), '-', coalesce(cast(company_id as char), ''), '-', coalesce(cast(ten_khlcnt as char), ''), '-', coalesce(cast(trang_thai as char), ''), '-', coalesce(cast(gia_du_toan as char), ''), '-', coalesce(cast(ten_du_toan as char), ''), '-', coalesce(cast(ben_moi_thau as char), ''), '-', coalesce(cast(gia_goi_thau as char), ''), '-', coalesce(cast(hinh_thuc_tb as char), ''), '-', coalesce(cast(send_mail_id as char), ''), '-', coalesce(cast(ten_goi_thau as char), ''), '-', coalesce(cast(competitor_id as char), ''), '-', coalesce(cast(loai_hop_dong as char), ''), '-', coalesce(cast(score_by_name as char), ''), '-', coalesce(cast(score_service as char), ''), '-', coalesce(cast(gia_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_dbdt as char), ''), '-', coalesce(cast(hinh_thuc_lcnt as char), ''), '-', coalesce(cast(ngay_phe_duyet as char), ''), '-', coalesce(cast(score_by_scope as char), ''), '-', coalesce(cast(so_hieu_khlcnt as char), ''), '-', coalesce(cast(hieu_luc_e_hsdt as char), ''), '-', coalesce(cast(so_tbmt_version as char), ''), '-', coalesce(cast(dia_diem_mo_thau as char), ''), '-', coalesce(cast(phuong_thuc_lcnt as char), ''), '-', coalesce(cast(services_by_name as char), ''), '-', coalesce(cast(don_vi_trung_thau as char), ''), '-', coalesce(cast(hinh_thuc_du_thau as char), ''), '-', coalesce(cast(services_by_scope as char), ''), '-', coalesce(cast(dia_diem_nhan_hsdt as char), ''), '-', coalesce(cast(dia_diem_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_tu_ngay as char), ''), '-', coalesce(cast(thoi_gian_thuc_hien as char), ''), '-', coalesce(cast(nhan_e_hsdt_den_ngay as char), ''), '-', coalesce(cast(thoi_diem_dong_mo_thau as char), '')) as char)) as _airbyte_thong_tin_goi_thau_hashid,
-    tmp.*
-from __dbt__cte__thong_tin_goi_thau_ab2 tmp
--- thong_tin_goi_thau
-where 1 = 1
-)-- Final base SQL model
--- depends_on: __dbt__cte__thong_tin_goi_thau_ab3
-select
-    id,
-    link,
-    deleted,
-    loai_tb,
-    so_tbmt,
-    linh_vuc,
-    services,
-    nguon_von,
-    phan_loai,
-    tien_dbdt,
-    `timestamp`,
-    company_id,
-    ten_khlcnt,
-    trang_thai,
-    gia_du_toan,
-    ten_du_toan,
-    ben_moi_thau,
-    gia_goi_thau,
-    hinh_thuc_tb,
-    send_mail_id,
-    ten_goi_thau,
-    competitor_id,
-    loai_hop_dong,
-    score_by_name,
-    score_service,
-    gia_trung_thau,
-    hinh_thuc_dbdt,
-    hinh_thuc_lcnt,
-    ngay_phe_duyet,
-    score_by_scope,
-    so_hieu_khlcnt,
-    hieu_luc_e_hsdt,
-    so_tbmt_version,
-    dia_diem_mo_thau,
-    phuong_thuc_lcnt,
-    services_by_name,
-    don_vi_trung_thau,
-    hinh_thuc_du_thau,
-    services_by_scope,
-    dia_diem_nhan_hsdt,
-    dia_diem_thuc_hien,
-    nhan_e_hsdt_tu_ngay,
-    thoi_gian_thuc_hien,
-    nhan_e_hsdt_den_ngay,
-    thoi_diem_dong_mo_thau,
-    _airbyte_ab_id,
-    _airbyte_emitted_at,
-    
-    CURRENT_TIMESTAMP
- as _airbyte_normalized_at,
-    _airbyte_thong_tin_goi_thau_hashid
-from __dbt__cte__thong_tin_goi_thau_ab3
--- thong_tin_goi_thau from bid._airbyte_raw_thong_tin_goi_thau
-where 1 = 1
-  )
-
-08:21:57.417689 [debug] [Thread-1  ]: mysql adapter: MySQL error: 1292 (22007): Truncated incorrect CHAR(5857) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:21:57.418044 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: ROLLBACK
-08:21:57.418718 [debug] [Thread-1  ]: finished collecting timing info
-08:21:57.419005 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: Close
-08:21:57.419693 [debug] [Thread-1  ]: Database Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)
-  1292 (22007): Truncated incorrect CHAR(5857) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-  compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:21:57.420306 [error] [Thread-1  ]: 1 of 1 ERROR creating table model bid.thong_tin_goi_thau ............................................................... [[31mERROR[0m in 0.19s]
-08:21:57.421088 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau
-08:21:57.422624 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:21:57.422955 [debug] [MainThread]: Using mysql connection "master"
-08:21:57.423224 [debug] [MainThread]: On master: BEGIN
-08:21:57.423600 [debug] [MainThread]: Opening a new connection, currently in state closed
-08:21:57.429754 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:21:57.430044 [debug] [MainThread]: On master: COMMIT
-08:21:57.430321 [debug] [MainThread]: Using mysql connection "master"
-08:21:57.430585 [debug] [MainThread]: On master: COMMIT
-08:21:57.431183 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:21:57.431452 [debug] [MainThread]: On master: Close
-08:21:57.432071 [info ] [MainThread]: 
-08:21:57.432568 [info ] [MainThread]: Finished running 1 table model in 0.60s.
-08:21:57.433204 [debug] [MainThread]: Connection 'master' was properly closed.
-08:21:57.433444 [debug] [MainThread]: Connection 'model.airbyte_utils.thong_tin_goi_thau' was properly closed.
-08:21:57.451133 [info ] [MainThread]: 
-08:21:57.451652 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
-08:21:57.452146 [info ] [MainThread]: 
-08:21:57.452590 [error] [MainThread]: [33mDatabase Error in model thong_tin_goi_thau (models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql)[0m
-08:21:57.453017 [error] [MainThread]:   1292 (22007): Truncated incorrect CHAR(5857) value: 'switch,switch,kênh truyền,kênh truyền,kênh truyền,kênh truyền,kênh truyền,dữ liệu,dữ liệu,dữ liệu,dá»'
-08:21:57.453468 [error] [MainThread]:   compiled SQL at ../build/run/airbyte_utils/models/generated/airbyte_tables/bid/thong_tin_goi_thau.sql
-08:21:57.453888 [info ] [MainThread]: 
-08:21:57.454304 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
-
-
-============================== 2023-02-23 08:24:07.959768 | 68e43d06-2bad-415a-8902-f8dc980430c5 ==============================
-08:24:07.959790 [info ] [MainThread]: Running with dbt=1.1.3
-08:24:07.960563 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_dir': '/home/qtcd/Documents/Projects/airbyte/workspace/normalization-files/normalize', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
-08:24:07.960848 [debug] [MainThread]: Tracking: do not track
-08:24:08.098651 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
-08:24:08.099340 [debug] [MainThread]: Partial parsing: updated file: airbyte_utils://models/generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:24:08.125649 [debug] [MainThread]: 1603: static parser failed on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:24:08.187697 [debug] [MainThread]: 1602: parser fallback to jinja rendering on generated/airbyte_ctes/bid/thong_tin_goi_thau_ab2.sql
-08:24:08.200716 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
-There are 2 unused configuration paths:
-- models.airbyte_utils.generated.airbyte_views
-- models.airbyte_utils.generated.airbyte_incremental
-
-08:24:08.226497 [info ] [MainThread]: Found 4 models, 0 tests, 0 snapshots, 0 analyses, 593 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
-08:24:08.228760 [info ] [MainThread]: 
-08:24:08.229990 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:24:08.231194 [debug] [ThreadPool]: Acquiring new mysql connection "list_schemas"
-08:24:08.253246 [debug] [ThreadPool]: Using mysql connection "list_schemas"
-08:24:08.253655 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_schemas"} */
-select distinct schema_name
-        from information_schema.schemata
-08:24:08.253917 [debug] [ThreadPool]: Opening a new connection, currently in state init
-08:24:08.263621 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.01 seconds
-08:24:08.265643 [debug] [ThreadPool]: On list_schemas: Close
-08:24:08.267543 [debug] [ThreadPool]: Acquiring new mysql connection "list_None_bid"
-08:24:08.278208 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:24:08.278578 [debug] [ThreadPool]: On list_None_bid: BEGIN
-08:24:08.278824 [debug] [ThreadPool]: Opening a new connection, currently in state init
-08:24:08.291191 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.01 seconds
-08:24:08.291622 [debug] [ThreadPool]: Using mysql connection "list_None_bid"
-08:24:08.291883 [debug] [ThreadPool]: On list_None_bid: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_None_bid"} */
-select
-      null as "database",
-      table_name as name,
-      table_schema as "schema",
-      case when table_type = 'BASE TABLE' then 'table'
-           when table_type = 'VIEW' then 'view'
-           else table_type
-      end as table_type
-    from information_schema.tables
-    where table_schema = 'bid'
-  
-08:24:08.293735 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
-08:24:08.295525 [debug] [ThreadPool]: On list_None_bid: ROLLBACK
-08:24:08.295983 [debug] [ThreadPool]: On list_None_bid: Close
-08:24:08.297071 [debug] [MainThread]: Using mysql connection "master"
-08:24:08.297329 [debug] [MainThread]: On master: BEGIN
-08:24:08.297569 [debug] [MainThread]: Opening a new connection, currently in state init
-08:24:08.303020 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:24:08.303292 [debug] [MainThread]: On master: COMMIT
-08:24:08.303575 [debug] [MainThread]: Using mysql connection "master"
-08:24:08.303814 [debug] [MainThread]: On master: COMMIT
-08:24:08.304435 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:24:08.304698 [debug] [MainThread]: On master: Close
-08:24:08.305274 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
-08:24:08.305760 [info ] [MainThread]: 
-08:24:08.310325 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:24:08.311003 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:24:08.311298 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:24:08.311580 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab1
-08:24:08.394215 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab1"
-08:24:08.394894 [debug] [Thread-1  ]: finished collecting timing info
-08:24:08.395772 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab1
-08:24:08.396984 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:24:08.397504 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:24:08.397791 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:24:08.398097 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab2
-08:24:08.510168 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab2"
-08:24:08.510649 [debug] [Thread-1  ]: finished collecting timing info
-08:24:08.511323 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab2
-08:24:08.511973 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:24:08.512633 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:24:08.513027 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:24:08.513286 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab3
-08:24:08.635324 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab3"
-08:24:08.635831 [debug] [Thread-1  ]: finished collecting timing info
-08:24:08.636538 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab3
-08:24:08.637481 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau
-08:24:08.637839 [info ] [Thread-1  ]: 1 of 1 START table model bid.thong_tin_goi_thau ........................................................................ [RUN]
-08:24:08.638571 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:24:08.638818 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau
-08:24:08.639054 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau
-08:24:08.665173 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:24:08.665828 [debug] [Thread-1  ]: finished collecting timing info
-08:24:08.666114 [debug] [Thread-1  ]: Began executing node model.airbyte_utils.thong_tin_goi_thau
-08:24:08.710176 [debug] [Thread-1  ]: Writing runtime SQL for node "model.airbyte_utils.thong_tin_goi_thau"
-08:24:08.710868 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:24:08.711120 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: BEGIN
-08:24:08.711422 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
-08:24:08.717061 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
-08:24:08.717379 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:24:08.717645 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+09:40:24.518067 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.0 seconds
+09:40:24.519808 [debug] [ThreadPool]: On list_None_bid: ROLLBACK
+09:40:24.520325 [debug] [ThreadPool]: On list_None_bid: Close
+09:40:24.521610 [debug] [MainThread]: Using mysql connection "master"
+09:40:24.521933 [debug] [MainThread]: On master: BEGIN
+09:40:24.522354 [debug] [MainThread]: Opening a new connection, currently in state init
+09:40:24.531297 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
+09:40:24.531614 [debug] [MainThread]: On master: COMMIT
+09:40:24.531862 [debug] [MainThread]: Using mysql connection "master"
+09:40:24.532170 [debug] [MainThread]: On master: COMMIT
+09:40:24.532757 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+09:40:24.533021 [debug] [MainThread]: On master: Close
+09:40:24.533598 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
+09:40:24.534065 [info ] [MainThread]: 
+09:40:24.538329 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab1
+09:40:24.538877 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab1"
+09:40:24.539155 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab1
+09:40:24.539422 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab1
+09:40:24.606450 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab1"
+09:40:24.607283 [debug] [Thread-1  ]: finished collecting timing info
+09:40:24.608118 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab1
+09:40:24.609172 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab2
+09:40:24.609730 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab2"
+09:40:24.610157 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab2
+09:40:24.610425 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab2
+09:40:24.722509 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab2"
+09:40:24.722930 [debug] [Thread-1  ]: finished collecting timing info
+09:40:24.723539 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab2
+09:40:24.724424 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau_ab3
+09:40:24.725095 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau_ab3"
+09:40:24.725350 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau_ab3
+09:40:24.725597 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau_ab3
+09:40:24.827092 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau_ab3"
+09:40:24.827488 [debug] [Thread-1  ]: finished collecting timing info
+09:40:24.828102 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau_ab3
+09:40:24.829409 [debug] [Thread-1  ]: Began running node model.airbyte_utils.thong_tin_goi_thau
+09:40:24.829772 [info ] [Thread-1  ]: 1 of 1 START table model bid.thong_tin_goi_thau ........................................................................ [RUN]
+09:40:24.830532 [debug] [Thread-1  ]: Acquiring new mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:24.830959 [debug] [Thread-1  ]: Began compiling node model.airbyte_utils.thong_tin_goi_thau
+09:40:24.831226 [debug] [Thread-1  ]: Compiling model.airbyte_utils.thong_tin_goi_thau
+09:40:24.857403 [debug] [Thread-1  ]: Writing injected SQL for node "model.airbyte_utils.thong_tin_goi_thau"
+09:40:24.858135 [debug] [Thread-1  ]: finished collecting timing info
+09:40:24.858424 [debug] [Thread-1  ]: Began executing node model.airbyte_utils.thong_tin_goi_thau
+09:40:24.902677 [debug] [Thread-1  ]: Writing runtime SQL for node "model.airbyte_utils.thong_tin_goi_thau"
+09:40:24.903532 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:24.903793 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: BEGIN
+09:40:24.904029 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+09:40:24.909631 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
+09:40:24.909907 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:24.910148 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
 
 
   create  table
@@ -2161,47 +610,58 @@ from __dbt__cte__thong_tin_goi_thau_ab3
 where 1 = 1
   )
 
-08:24:09.703262 [debug] [Thread-1  ]: SQL status: SUCCESS 3940 in 0.99 seconds
-08:24:09.714972 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:24:09.715240 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+09:40:24.957275 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.05 seconds
+09:40:24.968300 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:24.968575 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+
+    drop table if exists bid.`thong_tin_goi_thau__dbt_backup` cascade
+  
+09:40:24.971752 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
+09:40:24.973244 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:24.973507 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+
+    rename table `bid`.`thong_tin_goi_thau` to bid.`thong_tin_goi_thau__dbt_backup`
+  
+09:40:25.003529 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.03 seconds
+09:40:25.009499 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:25.009766 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
 
     drop table if exists bid.`thong_tin_goi_thau` cascade
   
-08:24:09.722952 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.01 seconds
-08:24:09.724841 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:24:09.725220 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+09:40:25.014489 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
+09:40:25.015786 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:25.016067 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
 
     rename table bid.`thong_tin_goi_thau__dbt_tmp` to bid.`thong_tin_goi_thau`
   
-08:24:09.743880 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.02 seconds
-08:24:09.767753 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: COMMIT
-08:24:09.768025 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:24:09.768287 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: COMMIT
-08:24:09.769072 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
-08:24:09.778246 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
-08:24:09.778499 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
+09:40:25.034881 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.02 seconds
+09:40:25.055111 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: COMMIT
+09:40:25.055395 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:25.055643 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: COMMIT
+09:40:25.056504 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
+09:40:25.065020 [debug] [Thread-1  ]: Using mysql connection "model.airbyte_utils.thong_tin_goi_thau"
+09:40:25.065297 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: /* {"app": "dbt", "dbt_version": "1.1.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.thong_tin_goi_thau"} */
 drop table if exists bid.`thong_tin_goi_thau__dbt_backup`
-08:24:09.781322 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.0 seconds
-08:24:09.782839 [debug] [Thread-1  ]: finished collecting timing info
-08:24:09.783133 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: Close
-08:24:09.784022 [info ] [Thread-1  ]: 1 of 1 OK created table model bid.thong_tin_goi_thau ................................................................... [[32mSUCCESS 3940[0m in 1.15s]
-08:24:09.784719 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau
-08:24:09.786480 [debug] [MainThread]: Acquiring new mysql connection "master"
-08:24:09.786792 [debug] [MainThread]: Using mysql connection "master"
-08:24:09.787045 [debug] [MainThread]: On master: BEGIN
-08:24:09.787289 [debug] [MainThread]: Opening a new connection, currently in state closed
-08:24:09.792766 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
-08:24:09.793038 [debug] [MainThread]: On master: COMMIT
-08:24:09.793282 [debug] [MainThread]: Using mysql connection "master"
-08:24:09.793525 [debug] [MainThread]: On master: COMMIT
-08:24:09.794085 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
-08:24:09.794341 [debug] [MainThread]: On master: Close
-08:24:09.794920 [info ] [MainThread]: 
-08:24:09.795391 [info ] [MainThread]: Finished running 1 table model in 1.57s.
-08:24:09.795826 [debug] [MainThread]: Connection 'master' was properly closed.
-08:24:09.796096 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
-08:24:09.796331 [debug] [MainThread]: Connection 'model.airbyte_utils.thong_tin_goi_thau' was properly closed.
-08:24:09.812616 [info ] [MainThread]: 
-08:24:09.813176 [info ] [MainThread]: [32mCompleted successfully[0m
-08:24:09.813723 [info ] [MainThread]: 
-08:24:09.814173 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+09:40:25.082573 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0.02 seconds
+09:40:25.084144 [debug] [Thread-1  ]: finished collecting timing info
+09:40:25.084437 [debug] [Thread-1  ]: On model.airbyte_utils.thong_tin_goi_thau: Close
+09:40:25.085322 [info ] [Thread-1  ]: 1 of 1 OK created table model bid.thong_tin_goi_thau ................................................................... [[32mSUCCESS 0[0m in 0.25s]
+09:40:25.086024 [debug] [Thread-1  ]: Finished running node model.airbyte_utils.thong_tin_goi_thau
+09:40:25.087589 [debug] [MainThread]: Acquiring new mysql connection "master"
+09:40:25.087945 [debug] [MainThread]: Using mysql connection "master"
+09:40:25.088246 [debug] [MainThread]: On master: BEGIN
+09:40:25.088492 [debug] [MainThread]: Opening a new connection, currently in state closed
+09:40:25.093905 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.01 seconds
+09:40:25.094176 [debug] [MainThread]: On master: COMMIT
+09:40:25.094455 [debug] [MainThread]: Using mysql connection "master"
+09:40:25.094722 [debug] [MainThread]: On master: COMMIT
+09:40:25.095299 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+09:40:25.095557 [debug] [MainThread]: On master: Close
+09:40:25.096199 [info ] [MainThread]: 
+09:40:25.096660 [info ] [MainThread]: Finished running 1 table model in 0.64s.
+09:40:25.097120 [debug] [MainThread]: Connection 'master' was properly closed.
+09:40:25.097357 [debug] [MainThread]: Connection 'model.airbyte_utils.thong_tin_goi_thau' was properly closed.
+09:40:25.113715 [info ] [MainThread]: 
+09:40:25.114236 [info ] [MainThread]: [32mCompleted successfully[0m
+09:40:25.114755 [info ] [MainThread]: 
+09:40:25.115209 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
