@@ -51,10 +51,14 @@ select
     cast(thoi_gian_thuc_hien as {{ dbt_utils.type_string() }}(1024)) as thoi_gian_thuc_hien,
     cast(nhan_e_hsdt_den_ngay as {{ dbt_utils.type_string() }}(1024)) as nhan_e_hsdt_den_ngay,
     cast(thoi_diem_dong_mo_thau as {{ dbt_utils.type_string() }}(1024)) as thoi_diem_dong_mo_thau,
+	cast(_ab_cdc_log_pos as {{ dbt_utils.type_float() }}) as _ab_cdc_log_pos,
+    cast(_ab_cdc_log_file as {{ dbt_utils.type_string() }}(1024)) as _ab_cdc_log_file,
+    cast(_ab_cdc_deleted_at as {{ dbt_utils.type_string() }}(1024)) as _ab_cdc_deleted_at,
+    cast(_ab_cdc_updated_at as {{ dbt_utils.type_string() }}(1024)) as _ab_cdc_updated_at,
     _airbyte_ab_id,
     _airbyte_emitted_at,
     {{ current_timestamp() }} as _airbyte_normalized_at
 from {{ ref('thong_tin_goi_thau_ab1') }}
 -- thong_tin_goi_thau
 where 1 = 1
-
+{{ incremental_clause('_airbyte_emitted_at', this) }}

@@ -67,6 +67,10 @@ select
     thoi_gian_thuc_hien,
     nhan_e_hsdt_den_ngay,
     thoi_diem_dong_mo_thau,
+	_ab_cdc_log_pos,
+    _ab_cdc_log_file,
+    _ab_cdc_deleted_at,
+    _ab_cdc_updated_at,
     _airbyte_ab_id,
     _airbyte_emitted_at,
     {{ current_timestamp() }} as _airbyte_normalized_at,
@@ -74,4 +78,5 @@ select
 from {{ ref('thong_tin_goi_thau_ab3') }}
 -- thong_tin_goi_thau from {{ source('bid', '_airbyte_raw_thong_tin_goi_thau') }}
 where 1 = 1
+{{ incremental_clause('_airbyte_emitted_at', this) }}
 

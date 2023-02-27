@@ -51,10 +51,14 @@ select
     {{ json_extract_scalar('_airbyte_data', ['thoi_gian_thuc_hien'], ['thoi_gian_thuc_hien']) }} as thoi_gian_thuc_hien,
     {{ json_extract_scalar('_airbyte_data', ['nhan_e_hsdt_den_ngay'], ['nhan_e_hsdt_den_ngay']) }} as nhan_e_hsdt_den_ngay,
     {{ json_extract_scalar('_airbyte_data', ['thoi_diem_dong_mo_thau'], ['thoi_diem_dong_mo_thau']) }} as thoi_diem_dong_mo_thau,
+	{{ json_extract_scalar('_airbyte_data', ['_ab_cdc_log_pos'], ['_ab_cdc_log_pos']) }} as _ab_cdc_log_pos,
+    {{ json_extract_scalar('_airbyte_data', ['_ab_cdc_log_file'], ['_ab_cdc_log_file']) }} as _ab_cdc_log_file,
+    {{ json_extract_scalar('_airbyte_data', ['_ab_cdc_deleted_at'], ['_ab_cdc_deleted_at']) }} as _ab_cdc_deleted_at,
+    {{ json_extract_scalar('_airbyte_data', ['_ab_cdc_updated_at'], ['_ab_cdc_updated_at']) }} as _ab_cdc_updated_at,
     _airbyte_ab_id,
     _airbyte_emitted_at,
     {{ current_timestamp() }} as _airbyte_normalized_at
 from {{ source('bid', '_airbyte_raw_thong_tin_goi_thau') }} as table_alias
 -- thong_tin_goi_thau
 where 1 = 1
-
+{{ incremental_clause('_airbyte_emitted_at', this) }}

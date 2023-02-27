@@ -52,9 +52,13 @@ select
         'thoi_gian_thuc_hien',
         'nhan_e_hsdt_den_ngay',
         'thoi_diem_dong_mo_thau',
+		'_ab_cdc_log_pos',
+        '_ab_cdc_log_file',
+        '_ab_cdc_deleted_at',
+        '_ab_cdc_updated_at',
     ]) }} as _airbyte_thong_tin_goi_thau_hashid,
     tmp.*
 from {{ ref('thong_tin_goi_thau_ab2') }} tmp
 -- thong_tin_goi_thau
 where 1 = 1
-
+{{ incremental_clause('_airbyte_emitted_at', this) }}
